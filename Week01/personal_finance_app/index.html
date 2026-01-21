@@ -5,77 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Finance</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <section>
+    <section class="parent_section">
         <header>
             <h1>Finance</h1>
             <nav>
-                <ul>
-                    <li>Overview</li>
-                    <li>Transactions</li>
-                    <li>Budgets</li>
-                    <li>Pots</li>
-                    <li>Recurring Bills</li>
-                    <button>Minimize Menu</button>
-                </ul>
+                <div class="nav_btns">
+                    <p>Overview</p>
+                </div>
+                <div class="nav_btns">
+                    <p>Transactions</p>
+                </div>
+                <div class="nav_btns">
+                    <p>Budgets</p>
+                </div>
+                <div class="nav_btns">
+                    <p>Pots</p>
+                </div>
+                <div class="nav_btns">
+                    <p>Recurring</p>
+                </div>
+
+                <div id="minimize_btn">
+                    <span>Minimize Menu</span>
+                </div>
             </nav>
         </header>
 
-        <aside>
+        <aside class="aside_section">
             <h1>Overview</h1>
-            <section>
+            <section class="aside_container">
                 <div id="overview">
-                    <div>
+                    <div class="overview_cards">
                         <p>Current Balance</p>
                         <h2>$4,836.00</h2>
                     </div>
-                    <div>
+                    <div class="overview_cards">
                         <p>Income</p>
                         <h2>$3,814.25</h2>
                     </div>
-                    <div>
+                    <div class="overview_cards">
                         <p>Expenses</p>
                         <h2>$1,700.50</h2>
                     </div>
                 </div>
-                <div id="major_div2">
+                <div class="major_div2">
                     <div id="major_div2_left">
-                        <div>
-                            <div id="posts_div">
+                        <div id="pots_div">
+                            <div id="pots_header_div">
                                 <h3>Pots</h3>
                                 <p>See Details</p>
                             </div>
-                            <div>
-                                <div>
+                            <div id="pots_categories">
+                                <div id="saving_jar">
                                     <div><!-- Jar icon --></div>
                                     <div>
                                         <p>Total Saved</p>
                                         <h1>$850</h1>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="saving_card_div">
                                     <div>
-                                        <div><!-- Dark green--></div>
-                                        <div>
+                                        <div class="savings_cards">
                                             <p>Savings</p>
                                             <h4>$159</h4>
                                         </div>
-                                        <div><!-- light green--></div>
-                                        <div>
-                                            <p>Gift</p>
-                                            <h4>$40</h4>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div><!-- Light grey--></div>
-                                        <div>
+                                        <div class="savings_cards">
                                             <p>Concert ticket</p>
                                             <h4>$110</h4>
                                         </div>
-                                        <div><!-- light brown--></div>
-                                        <div>
+                                    </div>
+
+                                    <div >
+                                        <div class="savings_cards">
+                                            <p>Gift</p>
+                                            <h4>$40</h4>
+                                        </div>
+                                        
+                                        <div class="savings_cards">
                                             <p>New Laptop</p>
                                             <h4>$10</h4>
                                         </div>
@@ -86,7 +96,7 @@
 
                         <!--  -->
                         <div id="transactions_div">
-                            <div>
+                            <div id="transactions_div_header">
                                 <h3>Transactions</h3>
                                 <div>
                                     <p>View all</p>
@@ -94,9 +104,9 @@
                             </div>
                             <div id="history_display">
                                 <div class="history_card">
-                                    <div>
+                                    <div class="profile_div">
                                         <div>
-                                            <img src="/" alt="">
+                                            <img src="./assets/images/pexels-thirdman-5327647.jpg" alt="" class="profile_image">
                                         </div>
                                         <p><b>Emmma Richardson</b></p>
                                     </div>
@@ -108,9 +118,9 @@
                                 </div>
 
                                 <div class="history_card">
-                                    <div>
+                                    <div class="profile_div">
                                         <div>
-                                            <img src="/" alt="">
+                                            <img src="./assets/images/pexels-thirdman-5327647.jpg" alt="" class="profile_image">
                                         </div>
                                         <p><b>Savory Bites Bistrob</b></p>
                                     </div>
@@ -122,9 +132,9 @@
                                 </div>
 
                                 <div class="history_card">
-                                    <div>
+                                    <div class="profile_div">
                                         <div>
-                                            <img src="/" alt="">
+                                            <img src="./assets/images/pexels-thirdman-5327647.jpg" alt="" class="profile_image">
                                         </div>
                                         <p><b>Daniel Carter</b></p>
                                     </div>
@@ -136,9 +146,9 @@
                                 </div>
 
                                 <div class="history_card">
-                                    <div>
+                                    <div class="profile_div">
                                         <div>
-                                            <img src="/" alt="">
+                                            <img src="./assets/images/pexels-thirdman-5327647.jpg" alt="" class="profile_image">
                                         </div>
                                         <p><b>Sun Park</b></p>
                                     </div>
@@ -150,11 +160,11 @@
                                 </div>
 
                                 <div class="history_card">
-                                    <div>
+                                    <div class="profile_div">
                                         <div>
-                                            <img src="/" alt="">
+                                            <img src="./assets/images/pexels-thirdman-5327647.jpg" alt="" class="profile_image">
                                         </div>
-                                        <p>Urban Service Hub</p>
+                                        <p><b>Urban Service Hub</b></p>
                                     </div>
 
                                     <div>

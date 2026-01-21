@@ -12,8 +12,11 @@ body {
 #container {
     margin: auto;
     width: 50%;
+    
 
 }
+
+
 .box_1 {
     background-color: blanchedalmond;
     border: 2px solid red;
@@ -34,11 +37,32 @@ body {
 
 .category {
     margin-top: 10px;
+    border: 2px solid red;
     padding: 20px;
     background-color: aqua;
     width: 500px;
+    height: 250px;
 }
 
 .category h2 {
     text-align: center;
+    
 }
+
+#cat1  {
+    width: 100px;
+    float: left;
+}
+
+#cat2  {
+    float: left;
+    width: 100px;
+    margin-left: 50px;
+}
+
+#cat3  {
+    float: left;
+    width: 100px;
+    margin-left: 50px;
+}
+
