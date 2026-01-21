@@ -10,6 +10,7 @@ body {
 }
 
 nav {
+    height: 10vh;
     background-color: black;
     margin: 5px;
     border-radius: 5px;
@@ -19,8 +20,8 @@ nav {
     padding: 10px;
 }
 #navbtn {
-    align-items: center;
-    margin-top: 0;
+    /* background-color: red; */
+    padding-bottom: 25px;
 }
 
 #logo {
