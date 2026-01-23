@@ -6,7 +6,7 @@
 
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(255, 255, 241);
+    background-color: #f8f5f0;
 }
 
 
@@ -29,6 +29,8 @@ header h1 {
 }
 
 .nav_btns {
+    display: flex;
+    gap: 10px;
     padding: 15px;
     margin-right: 25px;
     border-bottom-right-radius: 10px;
@@ -38,10 +40,17 @@ header h1 {
 .nav_btns:hover {
     background-color: #f4f4f4;
     color: black;
-    border-left: 4px solid rgb(77, 150, 77);
+    border-left: 4px solid #2596be;
+}
+
+.bx:hover {
+    color: #2596be;
 }
 
 #minimize_btn {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
     margin-top: 500px;
     margin-bottom: 100px;
 }
@@ -108,7 +117,7 @@ header h1 {
 }
 
 #saving_jar {
-    background-color: rgb(255, 255, 241);
+    background-color: #f8f5f0;
     width: 220px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px lightgray;
@@ -124,10 +133,25 @@ header h1 {
 
 
 .savings_cards {
-    border-left: 4px solid rgb(77, 150, 77);
     padding-left: 15px;
     margin-bottom: 20px;
 
+}
+
+.savings {
+    border-left: 4px solid #71a29f;
+}
+
+.gift {
+    border-left: 4px solid #9fd2dc;
+}
+
+.concert {
+    border-left: 4px solid #94939c;
+}
+
+.laptop {
+    border-left: 4px solid #f0d8c1;
 }
 
 #transactions_div {
@@ -190,8 +214,7 @@ header h1 {
 }
 
 #first_circle {
-    border: 30px solid red;
-    justify-items: center;
+    border: 25px solid #2596be;
     width: 250px;
     height: 250px;
     border-radius: 100%;
@@ -199,8 +222,7 @@ header h1 {
 }
 
 #second_circle {
-    border: 25px solid orange;
-    justify-items: center;
+    border: 20px solid orange;
     width: 200px;
     height: 200px;
     border-radius: 100%;
@@ -208,20 +230,38 @@ header h1 {
 }
 
 #inner_circle {
-    border: 20px solid gray;
-    width: 150px;
-    height: 150px;
+    border: 15px solid gray;
+    width: 160px;
+    height: 160px;
     border-radius: 100%;
+    display: flex;
     text-align: center;
+    align-items: center;
+
+
 
 }
 
 
 .budgets_card {
-    border-left: 4px solid rgb(77, 150, 77);
     padding-left: 20px;
     margin-bottom: 20px;
-    /* background-color: red; */
+}
+
+.entertainment {
+    border-left: 4px solid #367876;
+}
+
+.bills {
+    border-left: 4px solid #8ec6d1;
+}
+
+.dine_out {
+    border-left: 4px solid #ecceb5;
+}
+
+.personal_care {
+    border-left: 4px solid #646270;
 }
 
 .budgets_card p {
@@ -246,10 +286,9 @@ header h1 {
     margin-bottom: 25px;
 }
 
-#recurring_card {
+.recurring_card {
     display: flex;
     justify-content: space-between;
-    border-left: 4px solid rgb(77, 150, 77);
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 5px;
@@ -257,4 +296,16 @@ header h1 {
     margin-bottom: 20px;
     border-radius: 10px;
     background-color: rgb(255, 255, 241);
+}
+
+.paid_bills {
+    border-left: 4px solid #2596be;
+}
+
+.upcoming {
+    border-left: 4px solid #ecceb5;
+}
+
+.due_soon {
+    border-left: 4px solid #8ec6d1;
 }
