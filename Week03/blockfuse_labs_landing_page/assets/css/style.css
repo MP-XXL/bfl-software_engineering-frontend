@@ -86,19 +86,19 @@ ul li a:hover {
     text-decoration: none;
 }
 
-.bx-sun-bright {
+.light_mode_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #27272A;
-    color: #6F6F73;
     height: 40px;
     width: 40px;
     border-radius: 100%;
-    font-size: 30px;
-    padding-top: auto;
-    padding-bottom: auto;
 }
 
-.light_mode_div {
-    text-align: center;
+.bx-sun-bright {
+    color: #6F6F73;
+    font-size: 25px;
 }
 
 .hero_section {
