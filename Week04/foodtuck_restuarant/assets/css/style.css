@@ -10,6 +10,16 @@ body {
     font-family: "Helvetica";
 }
 
+ h1 {
+    font-size: 60px;
+    font-weight: 700;
+ }
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
 
 #page_header {
     text-align: center;
@@ -27,6 +37,7 @@ nav {
     align-items: center;
     margin-right: 100px;
     margin-left:100px;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -130,11 +141,6 @@ align-items: center;
     font-weight: 400;
  }
 
- .hero_text h1 {
-    font-size: 60px;
-    font-weight: 700;
- }
-
  .common_btn {
     background-color: #FF9F0D;
     width: 150px;
@@ -181,11 +187,6 @@ align-items: center;
 
  }
 
-  .about_text h1 {
-    font-size: 48px;
-    font-weight: 700;
- }
-
  .about_ticks {
     display: flex;
     align-items: center;
@@ -225,11 +226,6 @@ align-items: center;
     font-size: 32px;
     font-weight: 400;
     color: #FF9F0D;
-}
-
-.food_category_headers h1{
-    font-size: 48px;
-    font-weight: 700;
 }
 
 .food_category_grid {
@@ -378,11 +374,6 @@ align-items: center;
 
 }
 
-.why_choose_text h2 {
-    font-size: 48px;
-    font-weight: 700;
-}
-
 .all_vectors_div {
     display: flex;
     gap: 30px;
@@ -462,11 +453,6 @@ align-items: center;
     color: #FF9F0D;
 }
 
-.choose_and_pick_section h2 {
-    font-size: 48px;
-    font-weight: 700;
-}
-
 .choose_and_pick_section_nav {
     text-align: left;
     margin-right: 150px;
@@ -535,11 +521,6 @@ align-items: center;
     color: #FF9F0D;
 }
 
-.chefs_section_header h2 {
-    font-size: 48px;
-    font-weight: 700;
-}
-
 .chefs_grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -600,11 +581,6 @@ align-items: center;
     font-size: 32px;
     font-weight: 400;
     color: #FF9F0D;
-}
-
-.testimonials h2 {
-    font-size: 48px;
-    font-weight: 700;
 }
 
 .testimonials_text {
@@ -672,11 +648,6 @@ align-items: center;
     color: #FF9F0D;
 }
 
-.active_process h2 {
-    font-size: 48px;
-    font-weight: 700;
-}
-
 .active_p {
     font-size: 16px;
 }
@@ -738,11 +709,6 @@ align-items: center;
     color: #FF9F0D;
 }
 
-.blog_post_section h2 {
-    font-size: 48px;
-    font-weight: 700;
-}
-
 .blog_post_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -789,11 +755,6 @@ align-items: center;
     border-bottom: 1px solid #FF9F0D;
     padding-bottom: 50px;
 }
-/* 
-.support_text h2 {
-    font-size: 48px;
-    font-weight: 700;
-} */
 
 .footer_form {
     background-color: #FF9F0D;
@@ -913,4 +874,198 @@ button {
     width: 200px;
     bottom: 0px;
     right: 0px;
+}
+
+/* ======== MEDIA QUERIES ========== */
+
+@media (max-width: 768px) {
+
+    ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+    h1 {
+    font-size: 40px;
+    font-weight: 700;
+ }
+
+    h2 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero_image {
+    width: 400px;
+ }
+
+    .socials_mother_div {
+        display: none;
+    }
+
+    .about_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+    .about_images_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .eggs {
+    width: 310px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+    .sandwiches {
+    width: 150px;
+}
+
+    .food_category_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why_choose_us_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+    .why_choose_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .why_choose_grid {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .clients_section {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        justify-content: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    /* .choose_and_pick_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 40px;
+} */
+
+.choose_and_pick_section_nav ul {
+    gap: 20px;
+}
+
+    .menus_div {
+    display: flex;
+    flex-direction: column;
+}
+    .sample_menus {
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+    .chefs_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap:5px;
+}
+
+.testimonials {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.testimonials_leaf {
+    position: absolute;
+    width: 320px;
+    left: 70px;
+    top: 20px;
+}
+
+    .ellipse {
+    bottom: 420px;
+}
+
+    .active_process {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+    .blog_post_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+    .support_div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+    .footer_black {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .footer_yellow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+}
+
+@media (max-width: 360px) {
+    
 }

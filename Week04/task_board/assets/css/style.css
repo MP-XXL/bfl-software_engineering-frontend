@@ -221,7 +221,6 @@ input {
     grid-row: 2/9;
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: 40px 1fr;   */
     padding: 30px;
 }
 
@@ -286,7 +285,7 @@ input {
     border-radius: 2px;
 }
 
-.yello {
+.yellow {
     background-color: #EAB308;
 }
 
@@ -320,9 +319,8 @@ input {
 .main_bottom_body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 70px);
-    grid-auto-rows: minmax(100px, auto);
-    /* grid-auto-rows: minmax(100px, auto); */
+    /* grid-template-rows: repeat(8, 70px); */
+    grid-auto-rows: minmax(70px, auto);
     gap: 10px 15px;
     position: relative;
 }
@@ -346,7 +344,7 @@ input {
 }
 
 .task_image {
-    width: 200px;
+    width: 100%;
 }
 
 .card_texts_div {
@@ -402,8 +400,6 @@ input {
 .third_card_type_1 {
     border: 1px solid #DADEE6;
     grid-column: 2/3;
-    display: grid;
-    /* grid-auto-rows: minmax(70px auto); */
 
 }
 

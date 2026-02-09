@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>X Clone UI</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar-left">
+      <div class="sidebar-left-inner">
+        <div class="brand">
+          <div class="brand-icon">𝕏</div>
+        </div>
+        <nav class="nav-main">
+          <a class="nav-item active" href="#">
+            <span class="nav-icon">
+              <i class="fa-solid fa-house"></i>
+            </span>
+            <span class="nav-label">Home</span>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon">
+              <i class="fa-solid fa-hashtag"></i>
+            </span>
+            <span class="nav-label">Explore</span>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon">
+              <i class="fa-regular fa-bell"></i>
+            </span>
+            <span class="nav-label">Notifications</span>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon">
+              <i class="fa-regular fa-envelope"></i>
+            </span>
+            <span class="nav-label">Messages</span>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon">
+              <i class="fa-solid fa-rectangle-list"></i>
+            </span>
+            <span class="nav-label">Lists</span>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon">
+              <i class="fa-regular fa-user"></i>
+            </span>
+            <span class="nav-label">Profile</span>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon">
+              <i class="fa-solid fa-ellipsis"></i>
+            </span>
+            <span class="nav-label">More</span>
+          </a>
+        </nav>
+        <button class="btn-primary full-width">Post</button>
+        <div class="sidebar-user">
+          <div class="avatar avatar-sm">
+            <img
+              src="assets/images/6STPvmBO_400x400.jpg"
+              alt="Current user avatar"
+            />
+          </div>
+          <div class="user-meta">
+            <div class="user-name">Your Name</div>
+            <div class="user-handle">@username</div>
+          </div>
+          <div class="user-menu">⋯</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN FEED -->
+    <main class="feed">
+      <header class="feed-header">
+        <div class="feed-tabs">
+          <button class="feed-tab active">For you</button>
+          <button class="feed-tab">Following</button>
+          <button class="feed-tab">Binance Airdrop 5000 BTC</button>
+        </div>
+      </header>
+
+      <!-- COMPOSE TWEET -->
+      <section class="composer-card">
+        <div class="composer-inner">
+          <div class="avatar">
+            <img
+              src="assets/images/6STPvmBO_400x400.jpg"
+              alt="Current user avatar"
+            />
+          </div>
+          <div class="composer-main">
+            <input
+              class="composer-input"
+              type="text"
+              placeholder="What’s happening?"
+            />
+            <div class="composer-footer">
+              <div class="composer-actions">
+                <span class="composer-icon">
+                  <i class="fa-regular fa-image"></i>
+                </span>
+                <span class="composer-icon">
+                  <i class="fa-solid fa-gif"></i>
+                </span>
+                <span class="composer-icon">
+                  <i class="fa-solid fa-square-poll-vertical"></i>
+                </span>
+                <span class="composer-icon">
+                  <i class="fa-regular fa-face-smile"></i>
+                </span>
+                <span class="composer-icon">
+                  <i class="fa-regular fa-calendar"></i>
+                </span>
+                <span class="composer-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+              </div>
+              <button class="btn-primary btn-sm" disabled>Post</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TWEET CARD EXAMPLE (matches uploaded UI) -->
+      <article class="tweet-card">
+        <div class="tweet-body">
+          <div class="avatar">
+            <img
+              src="assets/images/HCM8Y1Mj_400x400.jpg"
+              alt="Mindset Machine avatar"
+            />
+          </div>
+          <div class="tweet-main">
+            <header class="tweet-header">
+              <span class="tweet-author">Mindset Machine</span>
+              <span class="tweet-handle">@MindsetMachine · posted</span>
+            </header>
+            <p class="tweet-text">
+              Homeless Addict Gets Clean And Attains A Computer Information
+              Systems Degree With a 4.0 Average
+            </p>
+            <div class="tweet-card-embed">
+              <img
+                class="tweet-embed-image"
+                src="assets/images/HAqt2_LbEAAEpP-.jpeg"
+                alt="Embedded post with three photos"
+              />
+            </div>
+            <footer class="tweet-footer">
+              <div class="tweet-stat">
+                <span class="tweet-action-icon">
+                  <i class="fa-regular fa-comment"></i>
+                </span>
+                <span>45</span>
+              </div>
+              <div class="tweet-stat">
+                <span class="tweet-action-icon">
+                  <i class="fa-solid fa-retweet"></i>
+                </span>
+                <span>1.14K</span>
+              </div>
+              <div class="tweet-stat">
+                <span class="tweet-action-icon">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+                <span>23K</span>
+              </div>
+              <div class="tweet-stat">
+                <span class="tweet-action-icon">
+                  <i class="fa-solid fa-chart-column"></i>
+                </span>
+                <span>234K</span>
+              </div>
+              <div class="tweet-stat">
+                <span class="tweet-action-icon">
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </span>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="sidebar-right">
+      <div class="sidebar-right-inner">
+        <div class="search-box">
+          <span class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search"
+          />
+        </div>
+
+        <section class="card promo-card">
+          <img
+            class="promo-image"
+            src="assets/images/Screenshot_from_2026-02-09_06-16-45-b2933af4-afdf-4ed9-8abc-3cade5c98ba2.png"
+            alt="Grok Imagine promo"
+          />
+          <div class="promo-label">New: Make videos in seconds</div>
+          <p class="promo-text">
+            Generate epic images &amp; videos in cinematic quality.
+          </p>
+          <button class="btn-secondary btn-sm">Try Grok Imagine 1.0</button>
+        </section>
+
+        <section class="card news-card">
+          <h2 class="card-title">Today’s News</h2>
+          <ul class="news-list">
+            <li class="news-item">
+              <div class="news-title">
+                Giannis Antetokounmpo Joins Chelsea FC Women Ownership Group
+              </div>
+              <div class="news-meta">1 day ago · Sports · 12.9K posts</div>
+            </li>
+            <li class="news-item">
+              <div class="news-title">
+                Haaland’s Late Penalty Seals City’s 3–2 Win At Anfield
+              </div>
+              <div class="news-meta">2 days ago · Sports · 521.8K posts</div>
+            </li>
+            <li class="news-item">
+              <div class="news-title">
+                Chelsea’s Birthday Post Revives Nostalgia for Kenedy’s Quick Goal
+              </div>
+              <div class="news-meta">3 days ago · Sports · 1.15M posts</div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
