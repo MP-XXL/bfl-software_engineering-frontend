@@ -333,6 +333,10 @@ input {
     gap: 10px;
 }
 
+.first_card_type:hover {
+    border: 2px solid #6366F1;
+}
+
 .task_card_avatar_div {
     display: flex;
     align-items: center;
@@ -341,6 +345,10 @@ input {
 
 .second_card_type {
     border: 1px solid #DADEE6;
+}
+
+.second_card_type:hover {
+    border: 2px solid #6366F1;
 }
 
 .task_image {
@@ -537,4 +545,170 @@ input {
     gap: 15px;
     padding: 10px;
     border-radius: 5px;
+}
+
+/* =========================================
+   RESPONSIVE STYLES
+   Breakpoints: 360px (small), 768px (medium), 1024px (large)
+   Mobile-first: base styles apply to mobile, then enhance for larger screens
+========================================= */
+
+/* Small screens - up to 360px wide */
+@media (max-width: 360px) {
+    body {
+        font-size: 11px;
+    }
+
+    #dashboard {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav_bar {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .nav_bar ul {
+        display: none; /* hide top nav links on very small screens */
+    }
+
+    .nav_bar form {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .last_nav_div {
+        margin-left: auto;
+    }
+
+    .aside_bar {
+        display: none; /* hide sidebar on very small screens */
+    }
+
+    .main {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        padding: 10px;
+    }
+
+    .main_top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main_top_nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .main_top_search {
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .main_bottom {
+        padding: 10px;
+    }
+
+    .main_bottom_header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main_bottom_body {
+        grid-template-columns: 1fr;
+    }
+
+    .last_card {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .footer_bar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .language_div {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Medium screens - tablets and small laptops (up to 768px) */
+@media (max-width: 768px) {
+    #dashboard {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .nav_bar {
+        grid-column: 1 / -1;
+    }
+
+    .aside_bar {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .main {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        padding: 15px;
+    }
+
+    .main_bottom_header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main_bottom_body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .last_card {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .footer_bar {
+        grid-column: 1 / -1;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
+
+/* Large screens - desktops from 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #dashboard {
+        grid-template-columns: 220px 1fr;
+    }
+
+    .aside_bar {
+        grid-column: 1 / 2;
+    }
+
+    .main {
+        grid-column: 2 / 3;
+        padding: 20px;
+    }
+
+    .main_bottom_header {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main_bottom_body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .last_card {
+        right: 10px;
+        bottom: 10px;
+    }
 }

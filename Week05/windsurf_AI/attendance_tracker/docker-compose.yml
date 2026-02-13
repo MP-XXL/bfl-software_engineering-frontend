@@ -1,0 +1,65 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: attendance_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: attendance_tracker
+      # MYSQL_USER: root
+      MYSQL_PASSWORD: password
+    ports:
+      - "3308:3306"
+    
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-ppassword"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - attendance_network
+
+  app:
+    build: .
+    container_name: attendance_app
+    restart: always
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_USER: root
+      DB_PASSWORD: password
+      DB_NAME: attendance_tracker
+      SECRET_KEY: your-secret-key-here-change-in-production
+    volumes:
+      - .:/app
+    networks:
+      - attendance_network
+
+  phpmyadmin:
+    container_name: attendance_phpmyadmin_container
+    image: phpmyadmin:latest
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - "8080:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - attendance_network
+
+volumes:
+  mysql_data:
+
+networks:
+  attendance_network:
+    driver: bridge
