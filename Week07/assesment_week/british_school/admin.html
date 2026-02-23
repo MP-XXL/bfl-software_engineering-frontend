@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - British School</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="m-0 p-0 bg-gray-50">
+    <div class="flex h-screen">
+        <!-- Left Sidebar -->
+        <aside class="w-20 bg-linear-to-b from-blue-900 to-blue-700 shadow-xl flex flex-col">
+            <!-- Logo -->
+            <div class="p-4 border-b">
+                <img src="/src/img/British School 1.png" alt="THE BRITISH SCHOOL" class="h-8">
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="flex-1 p-4 space-y-6">
+                <a href="#" class="flex flex-col items-center text-blue-200 hover:text-white hover:bg-blue-600 transition-all duration-200 rounded-lg p-2">
+                    <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+                    </svg>
+                    <span class="text-xs">Dashboard</span>
+                </a>
+                
+                <a href="#" class="flex flex-col items-center text-blue-200 hover:text-white hover:bg-blue-600 transition-all duration-200 rounded-lg p-2">
+                    <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                    </svg>
+                    <span class="text-xs">Students</span>
+                </a>
+                
+                <a href="#" class="flex flex-col items-center text-blue-200 hover:text-white hover:bg-blue-600 transition-all duration-200 rounded-lg p-2">
+                    <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    <span class="text-xs">Staff</span>
+                </a>
+                
+                <a href="#" class="flex flex-col items-center text-white bg-blue-500 rounded-lg p-2 shadow-lg">
+                    <div class="w-6 h-6 mb-1 flex items-center justify-center text-xs font-bold">ABC</div>
+                    <span class="text-xs">Subjects</span>
+                </a>
+                
+                <a href="#" class="flex flex-col items-center text-blue-200 hover:text-white hover:bg-blue-600 transition-all duration-200 rounded-lg p-2">
+                    <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                    </svg>
+                    <span class="text-xs">Payments</span>
+                </a>
+                
+                <a href="#" class="flex flex-col items-center text-blue-200 hover:text-white hover:bg-blue-600 transition-all duration-200 rounded-lg p-2">
+                    <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                    <span class="text-xs">Library</span>
+                </a>
+                
+                <a href="#" class="flex flex-col items-center text-blue-200 hover:text-white hover:bg-blue-600 transition-all duration-200 rounded-lg p-2">
+                    <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                    <span class="text-xs">Reports</span>
+                </a>
+                
+                <a href="#" class="flex flex-col items-center text-blue-200 hover:text-white hover:bg-blue-600 transition-all duration-200 rounded-lg p-2">
+                    <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    <span class="text-xs">Settings</span>
+                </a>
+            </nav>
+        </aside>
+        
+        <!-- Main Content Area -->
+        <main class="flex-1 flex">
+            <div class="flex-1 p-6">
+                <!-- Header -->
+                <header class="mb-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <p class="text-sm text-gray-500">...Administrator/Dashboard</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <!-- Search Bar -->
+                            <div class="relative">
+                                <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 border rounded-lg w-64 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <svg class="absolute left-3 top-2.5 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                </svg>
+                            </div>
+                            
+                            <!-- Notifications -->
+                            <button class="relative p-2 text-gray-600 hover:text-gray-800">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+                                </svg>
+                                <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                            </button>
+                            
+                            <!-- User Profile -->
+                            <div class="flex items-center space-x-2">
+                                <div class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
+                                    <span class="text-sm font-medium">U</span>
+                                </div>
+                                <span class="text-sm font-medium">User</span>
+                                <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                
+                <!-- Dashboard Widgets -->
+                <div class="grid grid-cols-3 gap-6 mb-6">
+                    <!-- Students Card -->
+                    <div class="bg-linear-to-br from-blue-50 to-blue-100 border border-blue-200 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 bg-linear-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-3xl font-bold bg-linear-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">308</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">STUDENTS</h3>
+                        <div class="flex items-center space-x-2">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full mr-1"></div>
+                                <span class="text-sm font-medium text-blue-700">MALE (61%)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-pink-500 rounded-full mr-1"></div>
+                                <span class="text-sm font-medium text-pink-700">FEMALE (39%)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Staff Card -->
+                    <div class="bg-linear-to-br from-green-50 to-green-100 border border-green-200 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 bg-linear-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-3xl font-bold bg-linear-to-r from-green-600 to-green-800 bg-clip-text text-transparent">100</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">STAFF</h3>
+                        <div class="flex items-center space-x-2">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full mr-1"></div>
+                                <span class="text-sm font-medium text-blue-700">MALE (55%)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-pink-500 rounded-full mr-1"></div>
+                                <span class="text-sm font-medium text-pink-700">FEMALE (45%)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Subjects Card -->
+                    <div class="bg-linear-to-br from-purple-50 to-purple-100 border border-purple-200 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 bg-linear-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                                <div class="text-white font-bold text-sm">ABC</div>
+                            </div>
+                            <span class="text-3xl font-bold bg-linear-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent">50</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">SUBJECTS</h3>
+                        <div class="flex items-center space-x-2">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full mr-1"></div>
+                                <span class="text-sm font-medium text-blue-700">SCIENCE (50%)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-green-500 rounded-full mr-1"></div>
+                                <span class="text-sm font-medium text-green-700">ARTS (50%)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Charts Section -->
+                <div class="grid grid-cols-2 gap-6 mb-6">
+                    <!-- Attendance Summary -->
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-lg font-bold text-gray-800">Attendance Summary</h3>
+                            <div class="flex space-x-2">
+                                <select class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option>Monthly</option>
+                                </select>
+                                <select class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option>Students</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="h-48 flex items-end justify-between px-4">
+                            <div class="flex flex-col items-center flex-1 group">
+                                <div class="w-8 bg-linear-to-t from-blue-400 to-blue-500 rounded-t hover:from-blue-500 hover:to-blue-600 transition-all duration-200" style="height: 60%"></div>
+                                <span class="text-xs mt-2 text-gray-600 group-hover:text-blue-600 font-medium">Jan</span>
+                            </div>
+                            <div class="flex flex-col items-center flex-1 group">
+                                <div class="w-8 bg-linear-to-t from-blue-400 to-blue-500 rounded-t hover:from-blue-500 hover:to-blue-600 transition-all duration-200" style="height: 70%"></div>
+                                <span class="text-xs mt-2 text-gray-600 group-hover:text-blue-600 font-medium">Feb</span>
+                            </div>
+                            <div class="flex flex-col items-center flex-1 group">
+                                <div class="w-8 bg-linear-to-t from-blue-500 to-blue-600 rounded-t hover:from-blue-600 hover:to-blue-700 transition-all duration-200" style="height: 70%"></div>
+                                <span class="text-xs mt-2 text-gray-600 group-hover:text-blue-600 font-medium">Mar</span>
+                            </div>
+                            <div class="flex flex-col items-center flex-1 group">
+                                <div class="w-8 bg-linear-to-t from-blue-500 to-blue-600 rounded-t hover:from-blue-600 hover:to-blue-700 transition-all duration-200" style="height: 80%"></div>
+                                <span class="text-xs mt-2 text-gray-600 group-hover:text-blue-600 font-medium">Apr</span>
+                            </div>
+                            <div class="flex flex-col items-center flex-1 group">
+                                <div class="w-8 bg-linear-to-t from-blue-600 to-blue-700 rounded-t hover:from-blue-700 hover:to-blue-800 transition-all duration-200" style="height: 75%"></div>
+                                <span class="text-xs mt-2 text-gray-600 group-hover:text-blue-600 font-medium">May</span>
+                            </div>
+                            <div class="flex flex-col items-center flex-1 group">
+                                <div class="w-8 bg-linear-to-t from-blue-600 to-blue-700 rounded-t hover:from-blue-700 hover:to-blue-800 transition-all duration-200" style="height: 85%"></div>
+                                <span class="text-xs mt-2 text-gray-600 group-hover:text-blue-600 font-medium">Jun</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Financial Summary -->
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-6">Financial Summary</h3>
+                        <div class="h-48 flex items-end justify-between px-4">
+                            <div class="flex flex-col items-center flex-1 group">
+                                <div class="w-8 bg-linear-to-t from-green-400 to-green-500 rounded-t hover:from-green-500 hover:to-green-600 transition-all duration-200" style="height: 40%"></div>
+                                <span class="text-xs mt-2 text-gray-600 group-hover:text-green-600 font-medium">Jn</span>
+                            </div>
+                            <div class="flex flex-col items-center flex-1 group">
+                                <div class="w-8 bg-linear-to-t from-green-400 to-green-500 rounded-t hover:from-green-500 hover:to-green-600 transition-all duration-200" style="height: 60%"></div>
+                                <span class="text-xs mt-2 text-gray-600 group-hover:text-green-600 font-medium">Jl</span>
+                            </div>
+                            <div class="flex flex-col items-center flex-1 group">
+                                <div class="w-8 bg-linear-to-t from-green-500 to-green-600 rounded-t hover:from-green-600 hover:to-green-700 transition-all duration-200" style="height: 80%"></div>
+                                <span class="text-xs mt-2 text-gray-600 group-hover:text-green-600 font-medium">Ag</span>
+                            </div>
+                            <div class="flex flex-col items-center flex-1 group">
+                                <div class="w-8 bg-linear-to-t from-green-500 to-green-600 rounded-t hover:from-green-600 hover:to-green-700 transition-all duration-200" style="height: 70%"></div>
+                                <span class="text-xs mt-2 text-gray-600 group-hover:text-green-600 font-medium">Sp</span>
+                            </div>
+                            <div class="flex flex-col items-center flex-1 group">
+                                <div class="w-8 bg-linear-to-t from-green-600 to-green-700 rounded-t hover:from-green-700 hover:to-green-800 transition-all duration-200" style="height: 90%"></div>
+                                <span class="text-xs mt-2 text-gray-600 group-hover:text-green-600 font-medium">Oc</span>
+                            </div>
+                            <div class="flex flex-col items-center flex-1 group">
+                                <div class="w-8 bg-linear-to-t from-green-600 to-green-700 rounded-t hover:from-green-700 hover:to-green-800 transition-all duration-200" style="height: 85%"></div>
+                                <span class="text-xs mt-2 text-gray-600 group-hover:text-green-600 font-medium">Nv</span>
+                            </div>
+                            <div class="flex flex-col items-center flex-1 group">
+                                <div class="w-8 bg-linear-to-t from-green-500 to-green-600 rounded-t hover:from-green-600 hover:to-green-700 transition-all duration-200" style="height: 75%"></div>
+                                <span class="text-xs mt-2 text-gray-600 group-hover:text-green-600 font-medium">Dc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recently Registered Users Table -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-lg font-bold text-gray-800">Recently registered users</h3>
+                        <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium transition-colors">view all users</a>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-3 px-4 font-bold text-gray-700">Name</th>
+                                    <th class="text-left py-3 px-4 font-bold text-gray-700">ID</th>
+                                    <th class="text-left py-3 px-4 font-bold text-gray-700">Role</th>
+                                    <th class="text-left py-3 px-4 font-bold text-gray-700">Gender</th>
+                                    <th class="text-left py-3 px-4 font-bold text-gray-700">Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100 hover:bg-blue-50 transition-colors">
+                                    <td class="py-3 px-4 font-medium text-gray-800">ActivEdge Technologies</td>
+                                    <td class="py-3 px-4 text-gray-600">#001</td>
+                                    <td class="py-3 px-4">
+                                        <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">Admin</span>
+                                    </td>
+                                    <td class="py-3 px-4 text-gray-600">Male</td>
+                                    <td class="py-3 px-4 text-gray-600">admin@activedge.com</td>
+                                </tr>
+                                <tr class="border-b border-gray-100 hover:bg-blue-50 transition-colors">
+                                    <td class="py-3 px-4 font-medium text-gray-800">John Doe</td>
+                                    <td class="py-3 px-4 text-gray-600">#002</td>
+                                    <td class="py-3 px-4">
+                                        <span class="px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium">Teacher</span>
+                                    </td>
+                                    <td class="py-3 px-4 text-gray-600">Male</td>
+                                    <td class="py-3 px-4 text-gray-600">john@school.com</td>
+                                </tr>
+                                <tr class="border-b border-gray-100 hover:bg-blue-50 transition-colors">
+                                    <td class="py-3 px-4 font-medium text-gray-800">Jane Smith</td>
+                                    <td class="py-3 px-4 text-gray-600">#003</td>
+                                    <td class="py-3 px-4">
+                                        <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">Student</span>
+                                    </td>
+                                    <td class="py-3 px-4 text-gray-600">Female</td>
+                                    <td class="py-3 px-4 text-gray-600">jane@school.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Sidebar -->
+            <aside class="w-80 bg-white shadow-xl p-6">
+                <!-- Calendar -->
+                <div class="mb-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-bold text-gray-800">April, 2022</h3>
+                        <div class="flex space-x-2">
+                            <button class="p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                                <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <button class="p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                                <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-7 gap-1 text-center text-xs">
+                        <div class="font-bold text-gray-700 py-2">Sun</div>
+                        <div class="font-bold text-gray-700 py-2">Mon</div>
+                        <div class="font-bold text-gray-700 py-2">Tue</div>
+                        <div class="font-bold text-gray-700 py-2">Wed</div>
+                        <div class="font-bold text-gray-700 py-2">Thu</div>
+                        <div class="font-bold text-gray-700 py-2">Fri</div>
+                        <div class="font-bold text-gray-700 py-2">Sat</div>
+                        
+                        <div class="py-2 text-gray-400">27</div>
+                        <div class="py-2 text-gray-400">28</div>
+                        <div class="py-2 text-gray-400">29</div>
+                        <div class="py-2 text-gray-400">30</div>
+                        <div class="py-2 text-gray-400">31</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer font-medium">1</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer font-medium">2</div>
+                        
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">3</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">4</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">5</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">6</div>
+                        <div class="py-2 bg-blue-100 rounded cursor-pointer font-medium text-blue-700">7</div>
+                        <div class="py-2 bg-blue-100 rounded cursor-pointer font-medium text-blue-700">8</div>
+                        <div class="py-2 bg-blue-100 rounded cursor-pointer font-medium text-blue-700">9</div>
+                        
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">10</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">11</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">12</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">13</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">14</div>
+                        <div class="py-2 bg-blue-100 rounded cursor-pointer font-medium text-blue-700">15</div>
+                        <div class="py-2 bg-blue-100 rounded cursor-pointer font-medium text-blue-700">16</div>
+                        
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">17</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">18</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">19</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">20</div>
+                        <div class="py-2 bg-blue-100 rounded cursor-pointer font-medium text-blue-700">21</div>
+                        <div class="py-2 bg-blue-100 rounded cursor-pointer font-medium text-blue-700">22</div>
+                        <div class="py-2 bg-blue-100 rounded cursor-pointer font-medium text-blue-700">23</div>
+                        
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">24</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">25</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">26</div>
+                        <div class="py-2 hover:bg-blue-50 rounded cursor-pointer">27</div>
+                        <div class="py-2 bg-blue-100 rounded cursor-pointer font-medium text-blue-700">28</div>
+                        <div class="py-2 bg-blue-100 rounded cursor-pointer font-medium text-blue-700">29</div>
+                        <div class="py-2 bg-blue-100 rounded cursor-pointer font-medium text-blue-700">30</div>
+                    </div>
+                </div>
+                
+                <!-- Upcoming Events -->
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">Upcoming events</h3>
+                    <div class="flex space-x-2 mb-4">
+                        <button class="px-3 py-1.5 bg-blue-600 text-white text-xs rounded-lg font-medium hover:bg-blue-700 transition-colors">All</button>
+                        <button class="px-3 py-1.5 bg-gray-100 text-gray-600 text-xs rounded-lg font-medium hover:bg-gray-200 transition-colors">Today</button>
+                        <button class="px-3 py-1.5 bg-gray-100 text-gray-600 text-xs rounded-lg font-medium hover:bg-gray-200 transition-colors">Weekly</button>
+                        <button class="px-3 py-1.5 bg-gray-100 text-gray-600 text-xs rounded-lg font-medium hover:bg-gray-200 transition-colors">Monthly</button>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4 rounded-r-lg hover:shadow-md transition-all duration-200">
+                            <div class="text-xs font-bold text-gray-600 mb-1">Saturday</div>
+                            <p class="text-sm text-gray-700 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam.</p>
+                            <div class="text-xs text-gray-500 font-medium">9th April 2022</div>
+                        </div>
+                        
+                        <div class="border-l-4 border-green-400 bg-green-50 p-4 rounded-r-lg hover:shadow-md transition-all duration-200">
+                            <div class="text-xs font-bold text-gray-600 mb-1">Saturday</div>
+                            <p class="text-sm text-gray-700 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam.</p>
+                            <div class="text-xs text-gray-500 font-medium">16th April 2022</div>
+                        </div>
+                        
+                        <div class="border-l-4 border-red-400 bg-red-50 p-4 rounded-r-lg hover:shadow-md transition-all duration-200">
+                            <div class="text-xs font-bold text-gray-600 mb-1">Saturday</div>
+                            <p class="text-sm text-gray-700 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam.</p>
+                            <div class="text-xs text-gray-500 font-medium">23rd April 2022</div>
+                        </div>
+                        
+                        <div class="border-l-4 border-blue-400 bg-blue-50 p-4 rounded-r-lg hover:shadow-md transition-all duration-200">
+                            <div class="text-xs font-bold text-gray-600 mb-1">Saturday</div>
+                            <p class="text-sm text-gray-700 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam.</p>
+                            <div class="text-xs text-gray-500 font-medium">30th April 2022</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+</body>
+</html>
