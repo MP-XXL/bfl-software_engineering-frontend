@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The British School - Dashboard</title>
+<link rel="stylesheet" href="/src/output.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+</head>
+<body class="flex h-screen overflow-hidden" style="font-family:'Nunito',sans-serif;background:#2a2a2a;">
+
+<!-- Sidebar -->
+<div style="background:#1a2744;font-family:'Nunito',sans-serif;" class="w-20 flex flex-col items-center py-6 gap-5 flex-shrink-0 rounded-r-3xl relative z-10">
+  <!-- Logo -->
+  <div class="flex flex-col items-center mb-1">
+    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center overflow-hidden">
+      <div class="flex flex-col w-full h-full">
+        <div class="flex flex-1">
+          <div class="flex-1 bg-[#f5a623]"></div>
+          <div class="flex-1 bg-[#1a2744]"></div>
+        </div>
+        <div class="h-1/3 bg-[#1a2744] flex items-center justify-center">
+          <span class="text-white text-[7px] font-bold leading-none text-center">THE<br>BRITISH<br>SCHOOL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-5 flex-1">
+    <a href="admin_dashboard.html" class="sidebar-icon w-10 h-10 flex items-center justify-center rounded-xl">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="12" y="2" width="6" height="6" rx="1"/><rect x="2" y="12" width="6" height="6" rx="1"/><rect x="12" y="12" width="6" height="6" rx="1"/></svg>
+    </a>
+    <button style="color:#fff;transition:color 0.2s;" class="w-10 h-10 flex items-center justify-center rounded-xl bg-white bg-opacity-10">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+    </button>
+    <button style="color:rgba(255,255,255,0.45);transition:color 0.2s;" class="w-10 h-10 flex items-center justify-center rounded-xl">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+    </button>
+    <button style="color:rgba(255,255,255,0.45);transition:color 0.2s;" class="w-10 h-10 flex items-center justify-center rounded-xl">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+    </button>
+    <button style="color:rgba(255,255,255,0.45);transition:color 0.2s;" class="w-10 h-10 flex items-center justify-center rounded-xl">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    </button>
+    <button style="color:rgba(255,255,255,0.45);transition:color 0.2s;" class="w-10 h-10 flex items-center justify-center rounded-xl">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5a12.083 12.083 0 01-6.16-10.922L12 14z"/></svg>
+    </button>
+    <button style="color:rgba(255,255,255,0.45);transition:color 0.2s;" class="w-10 h-10 flex items-center justify-center rounded-xl">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    </button>
+  </div>
+
+  <a href="index.html" class="sidebar-icon w-10 h-10 flex items-center justify-center rounded-xl mt-auto">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+  </a>
+</div>
+
+<!-- Main Content -->
+<div class="flex-1 flex flex-col overflow-hidden bg-[#f0f4f8]">
+
+  <!-- Top bar -->
+  <div class="flex items-center px-8 py-3 gap-4 bg-white border-b border-gray-100">
+    <!-- Logo text area -->
+    <div class="flex items-center gap-2 w-40 flex-shrink-0">
+      <div class="w-10 h-10 bg-white rounded-lg border border-gray-100 flex items-center justify-center overflow-hidden">
+        <div class="flex flex-col w-full h-full">
+          <div class="flex flex-1">
+            <div class="flex-1 bg-[#f5a623]"></div>
+            <div class="flex-1 bg-[#1a2744]"></div>
+          </div>
+          <div class="h-1/3 bg-[#1a2744] flex items-center justify-center">
+            <span class="text-white text-[6px] font-bold leading-none text-center">THE<br>BRITISH<br>SCHOOL</span>
+          </div>
+        </div>
+      </div>
+      <div class="leading-none">
+        <p class="text-[9px] font-bold text-[#1a2744] tracking-wider uppercase">The</p>
+        <p class="text-[9px] font-bold text-[#1a2744] tracking-wider uppercase">British</p>
+        <p class="text-[9px] font-bold text-[#1a2744] tracking-wider uppercase">School</p>
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="flex-1 flex justify-center">
+      <div class="flex items-center bg-gray-100 rounded-full px-5 py-2.5 gap-2 w-full max-w-md">
+        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search..." class="outline-none text-sm text-gray-400 bg-transparent w-full"/>
+      </div>
+    </div>
+
+    <!-- User -->
+    <div class="flex items-center gap-3 flex-shrink-0">
+      <div class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
+        <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/></svg>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-[#c9a87c] overflow-hidden flex items-center justify-center">
+        <!-- Avatar placeholder -->
+        <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none">
+          <circle cx="20" cy="20" r="20" fill="#c9a87c"/>
+          <ellipse cx="20" cy="16" rx="7" ry="8" fill="#8B5E3C"/>
+          <ellipse cx="20" cy="34" rx="13" ry="10" fill="#6B4226"/>
+        </svg>
+      </div>
+      <span class="font-semibold text-gray-700 text-sm">User</span>
+      <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div class="flex flex-1 overflow-hidden">
+
+    <!-- Center Content -->
+    <div class="flex-1 overflow-y-auto px-8 py-6 space-y-6">
+
+      <!-- Greeting + Students stat row -->
+      <div class="flex gap-6">
+        <!-- Greeting + Syllabus -->
+        <div class="flex-1 space-y-4">
+          <!-- Greeting -->
+          <div>
+            <h1 class="text-4xl font-black text-[#1a2744] leading-tight flex items-center gap-2">
+              Good Morning
+              <svg class="w-9 h-9 text-[#f5a623]" viewBox="0 0 36 36" fill="none">
+                <circle cx="18" cy="18" r="8" fill="#f5a623" opacity="0.3"/>
+                <circle cx="18" cy="18" r="5" fill="#f5a623"/>
+                <line x1="18" y1="4" x2="18" y2="8" stroke="#f5a623" stroke-width="2" stroke-linecap="round"/>
+                <line x1="18" y1="28" x2="18" y2="32" stroke="#f5a623" stroke-width="2" stroke-linecap="round"/>
+                <line x1="4" y1="18" x2="8" y2="18" stroke="#f5a623" stroke-width="2" stroke-linecap="round"/>
+                <line x1="28" y1="18" x2="32" y2="18" stroke="#f5a623" stroke-width="2" stroke-linecap="round"/>
+                <line x1="8.5" y1="8.5" x2="11.3" y2="11.3" stroke="#f5a623" stroke-width="2" stroke-linecap="round"/>
+                <line x1="24.7" y1="24.7" x2="27.5" y2="27.5" stroke="#f5a623" stroke-width="2" stroke-linecap="round"/>
+                <line x1="27.5" y1="8.5" x2="24.7" y2="11.3" stroke="#f5a623" stroke-width="2" stroke-linecap="round"/>
+                <line x1="11.3" y1="24.7" x2="8.5" y2="27.5" stroke="#f5a623" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </h1>
+            <h2 class="text-3xl font-bold text-[#1a2744]">Mr. Johnson Maduka</h2>
+          </div>
+
+          <!-- Syllabus Guide card -->
+          <div style="background:linear-gradient(135deg,#1a2744 0%,#2d4a7a 100%);" class="rounded-2xl p-4 text-white">
+            <p class="text-sm font-semibold mb-3 text-white text-opacity-90">Syllabus Guide</p>
+            <div class="flex gap-3 overflow-hidden">
+              <!-- Card 1 (faded left) -->
+              <div class="flex-shrink-0 w-28 bg-white bg-opacity-10 rounded-xl p-3 flex flex-col items-center justify-center opacity-50">
+                <div class="w-8 h-8 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mb-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </div>
+                <span class="text-xs text-white text-opacity-70">Design</span>
+              </div>
+              <!-- Card 2 (active center) -->
+              <div class="flex-1 bg-white rounded-xl p-3 flex items-center gap-3 shadow-lg">
+                <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-7 h-7 text-[#f5a623]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                </div>
+                <div>
+                  <p class="font-bold text-[#1a2744] text-sm">Basic Design</p>
+                  <p class="text-xs text-[#f5a623]">Introduction to Graphics Design</p>
+                </div>
+                <div class="ml-auto">
+                  <div class="w-6 h-6 rounded-full border-2 border-gray-200 flex items-center justify-center">
+                    <svg class="w-3 h-3 text-gray-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 (next, pink) -->
+              <div class="flex-shrink-0 w-28 bg-pink-50 rounded-xl p-3 flex items-center gap-2 opacity-80">
+                <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </div>
+                <span class="text-xs text-gray-400 truncate">In...</span>
+              </div>
+            </div>
+            <!-- Dots -->
+            <div class="flex justify-center gap-2 mt-3">
+              <span class="w-2 h-2 rounded-full bg-white bg-opacity-40"></span>
+              <span class="w-2 h-2 rounded-full bg-white"></span>
+              <span class="w-2 h-2 rounded-full bg-white bg-opacity-40"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Students stat -->
+        <div style="background:#fff;border-radius:16px;" class="p-5 flex flex-col justify-center w-64 flex-shrink-0">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="relative w-20 h-20 flex-shrink-0">
+              <svg viewBox="0 0 36 36" class="w-20 h-20 -rotate-90">
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#1a2744" stroke-width="3.5" stroke-dasharray="61 39" stroke-linecap="round"/>
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#f5a623" stroke-width="3.5" stroke-dasharray="39 100" stroke-dashoffset="-61" stroke-linecap="round"/>
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="w-8 h-8 text-[#1a2744]" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.136l1.94.831a3 3 0 002.36 0l1.94-.831v3.136a9.026 9.026 0 00-2.3 1.638 9.02 9.02 0 00-.64-.001zM17.99 13.03a1 1 0 01-.89.89 8.969 8.969 0 00-1.05.174V10.12l1.69-.723a11.115 11.115 0 01.25 3.633z"/></svg>
+              </div>
+            </div>
+            <div>
+              <p class="text-xs font-black text-gray-600 tracking-widest uppercase">Students</p>
+              <div class="flex gap-3 text-xs text-gray-400 mt-1">
+                <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#1a2744] inline-block"></span>Male (61%)</span>
+                <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#f5a623] inline-block"></span>Female (39%)</span>
+              </div>
+              <p class="text-4xl font-black text-[#1a2744] mt-1">308</p>
+            </div>
+          </div>
+
+          <!-- Student Rankings -->
+          <div>
+            <p class="font-bold text-gray-700 text-sm mb-2">Student Rankings</p>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3">
+                <span class="w-6 h-6 rounded-full bg-[#f5a623] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">1</span>
+                <span class="text-sm text-gray-400">ActivEdge Technologies</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-6 h-6 rounded-full bg-[#f5a623] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">2</span>
+                <span class="text-sm text-gray-400">ActivEdge Technologies</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-6 h-6 rounded-full bg-[#f5a623] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">3</span>
+                <span class="text-sm text-gray-400">ActivEdge Technologies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Current Assignments -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <h2 class="text-lg font-black text-[#1a2744]">Current Assignments</h2>
+          <button class="w-6 h-6 bg-[#1a2744] rounded flex items-center justify-center">
+            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><polygon points="5,3 19,10 5,17"/></svg>
+          </button>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <!-- Assignment Card 1 -->
+          <div style="border-radius:12px;border:1px solid #e5e7eb;padding:16px;position:relative;overflow:hidden;" class="">
+            <p class="font-bold text-[#1a2744] text-sm">Basic Design</p>
+            <p class="text-xs text-gray-500 mt-0.5">Introduction to Graphics Design</p>
+            <div class="flex items-center gap-4 mt-3 text-xs text-gray-400">
+              <span class="flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                25<sup>th</sup> March 2022
+              </span>
+              <span class="flex items-center gap-1 text-[#f5a623] font-semibold">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                8<sup>th</sup> April 2022
+              </span>
+            </div>
+            <div class="flex items-center gap-2 mt-3">
+              <span class="flex items-center gap-1 bg-[#1a9db0] text-white text-xs font-bold px-2 py-0.5 rounded-full">32 Submitted</span>
+              <span class="flex items-center gap-1 bg-[#f5a623] text-white text-xs font-bold px-2 py-0.5 rounded-full">18 Not Submitted</span>
+            </div>
+            <div style="position:absolute;bottom:0;left:0;right:0;height:3px;background:#f5a623;"></div>
+          </div>
+          <!-- Assignment Card 2 -->
+          <div style="border-radius:12px;border:1px solid #e5e7eb;padding:16px;position:relative;overflow:hidden;" class="">
+            <p class="font-bold text-[#1a2744] text-sm">Basic Design</p>
+            <p class="text-xs text-gray-500 mt-0.5">Introduction to Graphics Design</p>
+            <div class="flex items-center gap-4 mt-3 text-xs text-gray-400">
+              <span class="flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                25<sup>th</sup> March 2022
+              </span>
+              <span class="flex items-center gap-1 text-[#f5a623] font-semibold">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                8<sup>th</sup> April 2022
+              </span>
+            </div>
+            <div class="flex items-center gap-2 mt-3">
+              <span class="flex items-center gap-1 bg-[#1a9db0] text-white text-xs font-bold px-2 py-0.5 rounded-full">32 Submitted</span>
+              <span class="flex items-center gap-1 bg-[#f5a623] text-white text-xs font-bold px-2 py-0.5 rounded-full">18 Not Submitted</span>
+            </div>
+            <div style="position:absolute;bottom:0;left:0;right:0;height:3px;background:#f5a623;"></div>
+          </div>
+          <!-- Assignment Card 3 -->
+          <div style="border-radius:12px;border:1px solid #e5e7eb;padding:16px;position:relative;overflow:hidden;" class="">
+            <p class="font-bold text-[#1a2744] text-sm">Basic Design</p>
+            <p class="text-xs text-gray-500 mt-0.5">Introduction to Graphics Design</p>
+            <div class="flex items-center gap-4 mt-3 text-xs text-gray-400">
+              <span class="flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                25<sup>th</sup> March 2022
+              </span>
+              <span class="flex items-center gap-1 text-[#f5a623] font-semibold">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                8<sup>th</sup> April 2022
+              </span>
+            </div>
+            <div class="flex items-center gap-2 mt-3">
+              <span class="flex items-center gap-1 bg-[#1a9db0] text-white text-xs font-bold px-2 py-0.5 rounded-full">32 Submitted</span>
+              <span class="flex items-center gap-1 bg-[#f5a623] text-white text-xs font-bold px-2 py-0.5 rounded-full">18 Not Submitted</span>
+            </div>
+            <div style="position:absolute;bottom:0;left:0;right:0;height:3px;background:#f5a623;"></div>
+          </div>
+        </div>
+        <!-- Carousel dots -->
+        <div class="flex justify-center gap-2 mt-3">
+          <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+          <span class="w-2 h-2 rounded-full bg-[#1a2744]"></span>
+          <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+        </div>
+      </div>
+
+      <!-- Student Attendance -->
+      <div style="background:#fff;border-radius:16px;" class="p-5">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-base font-black text-[#1a2744]">Student Attendance</h2>
+          <button class="flex items-center gap-2 border border-gray-200 rounded-lg px-3 py-1.5 text-sm text-gray-600 font-semibold">
+            Week 6
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-gray-100">
+              <th class="text-left text-gray-400 font-semibold pb-3 pr-4 w-1/3">Name</th>
+              <th class="text-center text-gray-400 font-semibold pb-3 px-4 border-l border-gray-100">Mon</th>
+              <th class="text-center text-gray-400 font-semibold pb-3 px-4 border-l border-gray-100">Tues</th>
+              <th class="text-center text-gray-400 font-semibold pb-3 px-4 border-l border-gray-100">Wed</th>
+              <th class="text-center text-gray-400 font-semibold pb-3 px-4 border-l border-gray-100">Thurs</th>
+              <th class="text-center text-gray-400 font-semibold pb-3 px-4 border-l border-gray-100">Fri</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-50">
+              <td class="py-3 pr-4 text-gray-500">ActivEdge Technologies</td>
+              <td class="py-3 px-4 text-center text-gray-500 border-l border-gray-100">Present</td>
+              <td class="py-3 px-4 text-center text-red-400 font-semibold border-l border-gray-100">Absent</td>
+              <td class="py-3 px-4 text-center text-gray-500 border-l border-gray-100">Present</td>
+              <td class="py-3 px-4 text-center text-gray-500 border-l border-gray-100">Present</td>
+              <td class="py-3 px-4 text-center border-l border-gray-100">
+                <div class="w-5 h-5 border-2 border-gray-300 rounded mx-auto"></div>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-50">
+              <td class="py-3 pr-4 text-gray-500">ActivEdge Technologies</td>
+              <td class="py-3 px-4 text-center text-red-400 font-semibold border-l border-gray-100">Absent</td>
+              <td class="py-3 px-4 text-center text-gray-500 border-l border-gray-100">Present</td>
+              <td class="py-3 px-4 text-center text-gray-500 border-l border-gray-100">Present</td>
+              <td class="py-3 px-4 text-center text-gray-500 border-l border-gray-100">Present</td>
+              <td class="py-3 px-4 text-center border-l border-gray-100">
+                <div class="w-5 h-5 border-2 border-gray-300 rounded mx-auto"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- Right panel -->
+    <div class="w-72 flex-shrink-0 overflow-y-auto px-4 pb-8 space-y-5 bg-white border-l border-gray-100">
+
+      <!-- Calendar -->
+      <div class="pt-4">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-bold text-[#1a9db0] text-sm">April, 2022</h3>
+          <div class="flex gap-1">
+            <button class="text-gray-400 hover:text-gray-600"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+            <button class="text-gray-400 hover:text-gray-600"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+          </div>
+        </div>
+        <div class="grid grid-cols-7 text-center text-xs mb-1">
+          <span class="text-red-400 font-bold py-1">Sun</span>
+          <span class="text-gray-400 font-semibold py-1">Mon</span>
+          <span class="text-gray-400 font-semibold py-1">Tue</span>
+          <span class="text-gray-400 font-semibold py-1">Wed</span>
+          <span class="text-gray-400 font-semibold py-1">Thu</span>
+          <span class="text-gray-400 font-semibold py-1">Fri</span>
+          <span class="text-gray-400 font-semibold py-1">Sat</span>
+        </div>
+        <!-- Row 1 -->
+        <div class="grid grid-cols-7 text-center text-xs">
+          <span class="text-gray-300 py-1.5">27</span>
+          <span class="text-gray-300 py-1.5">28</span>
+          <span class="text-gray-300 py-1.5">29</span>
+          <span class="text-gray-300 py-1.5">30</span>
+          <span class="text-gray-300 py-1.5">31</span>
+          <span class="py-1.5 flex justify-center"><span class="w-7 h-7 bg-[#1a9db0] text-white rounded-full flex items-center justify-center font-bold">1</span></span>
+          <span class="text-gray-500 py-1.5 relative">2<span class="absolute top-0.5 right-1 w-1 h-1 rounded-full bg-orange-400"></span></span>
+        </div>
+        <!-- Row 2 -->
+        <div class="grid grid-cols-7 text-center text-xs">
+          <span class="text-red-400 py-1.5 font-semibold">3</span>
+          <span class="text-gray-500 py-1.5">4</span>
+          <span class="text-gray-500 py-1.5">5</span>
+          <span class="text-gray-500 py-1.5">6</span>
+          <span class="text-gray-500 py-1.5">7</span>
+          <span class="text-gray-500 py-1.5">8</span>
+          <span class="text-gray-500 py-1.5 relative">9<span class="absolute top-0.5 right-1 w-1 h-1 rounded-full bg-orange-400"></span></span>
+        </div>
+        <!-- Row 3 -->
+        <div class="grid grid-cols-7 text-center text-xs">
+          <span class="text-green-500 py-1.5 font-semibold relative">10<span class="absolute top-0.5 right-0 w-1 h-1 rounded-full bg-green-500"></span></span>
+          <span class="text-gray-500 py-1.5">11</span>
+          <span class="text-gray-500 py-1.5">12</span>
+          <span class="text-gray-500 py-1.5">13</span>
+          <span class="text-gray-500 py-1.5">14</span>
+          <span class="text-gray-500 py-1.5 relative">15<span class="absolute top-0.5 right-0 w-1 h-1 rounded-full bg-orange-400"></span></span>
+          <span class="text-gray-500 py-1.5 relative">16<span class="absolute top-0.5 right-0 w-1 h-1 rounded-full bg-green-400"></span></span>
+        </div>
+        <!-- Row 4 -->
+        <div class="grid grid-cols-7 text-center text-xs">
+          <span class="text-red-400 py-1.5 font-semibold">17</span>
+          <span class="text-gray-500 py-1.5 relative">18<span class="absolute top-0.5 right-0 w-1 h-1 rounded-full bg-orange-400"></span></span>
+          <span class="text-gray-500 py-1.5">19</span>
+          <span class="text-gray-500 py-1.5">20</span>
+          <span class="text-gray-500 py-1.5">21</span>
+          <span class="text-gray-500 py-1.5">22</span>
+          <span class="text-gray-500 py-1.5">23</span>
+        </div>
+        <!-- Row 5 -->
+        <div class="grid grid-cols-7 text-center text-xs">
+          <span class="text-red-400 py-1.5 font-semibold">24</span>
+          <span class="text-gray-500 py-1.5 relative">25<span class="absolute top-0.5 right-0 w-1 h-1 rounded-full bg-red-400"></span></span>
+          <span class="text-gray-500 py-1.5">26</span>
+          <span class="text-gray-500 py-1.5 relative">27<span class="absolute top-0.5 right-0 w-1 h-1 rounded-full bg-orange-400"></span></span>
+          <span class="text-gray-500 py-1.5 relative">28<span class="absolute top-0.5 right-0 w-1 h-1 rounded-full bg-red-400"></span></span>
+          <span class="text-gray-500 py-1.5 relative">29<span class="absolute top-0.5 right-0 w-1 h-1 rounded-full bg-orange-400"></span></span>
+          <span class="text-gray-500 py-1.5">30</span>
+        </div>
+        <!-- Row 6 -->
+        <div class="grid grid-cols-7 text-center text-xs">
+          <span class="text-gray-300 py-1.5">1</span>
+          <span class="text-gray-300 py-1.5">2</span>
+          <span class="text-gray-300 py-1.5">3</span>
+          <span class="text-gray-300 py-1.5">4</span>
+          <span class="text-gray-300 py-1.5">5</span>
+          <span class="text-gray-300 py-1.5">6</span>
+          <span class="text-gray-300 py-1.5">7</span>
+        </div>
+      </div>
+
+      <!-- Upcoming events -->
+      <div>
+        <h3 class="font-bold text-gray-700 text-sm mb-3">Upcoming events</h3>
+        <div class="flex gap-1 mb-3">
+          <button class="bg-[#1a2744] text-white text-xs px-3 py-1 rounded-full font-semibold">All</button>
+          <button class="text-gray-400 text-xs px-3 py-1 rounded-full hover:bg-gray-100">Today</button>
+          <button class="text-gray-400 text-xs px-3 py-1 rounded-full hover:bg-gray-100">Weekly</button>
+          <button class="text-gray-400 text-xs px-3 py-1 rounded-full hover:bg-gray-100">Monthly</button>
+        </div>
+        <div style="border-radius:10px;padding:12px;margin-bottom:8px;background:#fff8ec;" class="">
+          <p class="text-xs font-bold text-[#f5a623] mb-1">Saturday</p>
+          <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam.</p>
+          <p class="text-xs text-gray-400 text-right mt-1">9<sup>th</sup> April 2022</p>
+        </div>
+        <div style="border-radius:10px;padding:12px;margin-bottom:8px;background:#f0faf4;" class="">
+          <p class="text-xs font-bold text-green-500 mb-1">Saturday</p>
+          <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam.</p>
+          <p class="text-xs text-gray-400 text-right mt-1">9<sup>th</sup> April 2022</p>
+        </div>
+        <div style="border-radius:10px;padding:12px;margin-bottom:8px;background:#fff0f0;" class="">
+          <p class="text-xs font-bold text-red-400 mb-1">Saturday</p>
+          <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam.</p>
+          <p class="text-xs text-gray-400 text-right mt-1">9<sup>th</sup> April 2022</p>
+        </div>
+        <div style="border-radius:10px;padding:12px;margin-bottom:8px;background:#f3f4f6;" class="">
+          <p class="text-xs font-bold text-gray-500 mb-1">Saturday</p>
+          <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam.</p>
+          <p class="text-xs text-gray-400 text-right mt-1">9<sup>th</sup> April 2022</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
