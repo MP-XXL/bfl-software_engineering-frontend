@@ -115,3 +115,36 @@ body {
     left: 50px;
 }
 
+.outter {
+    width: 200px;
+    height: 100px;
+    border: 50px solid red;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    position: relative;
+    border-top: 0;
+}
+
+.half-donut {
+  /* Dimensions of the container */
+  width: 200px;
+  height: 100px; /* Half of the width to show only the top half */
+  
+  /* Make the shape a semi-circle */
+  border-top-left-radius: 100px; /* Half of the width */
+  border-top-right-radius: 100px; /* Half of the width */
+  
+  /* Create the "donut" effect using a thick border */
+  border: 50px solid #333; /* Color of the donut */
+  /* border-bottom: 0;  */
+  /* Hide the bottom border */
+  
+  /* Hide the overflowing bottom half of the thick border */
+  overflow: hidden; 
+
+  /* Optional: Center the element on the page */
+  /* margin: 50px auto;  */
+  position: absolute;
+  left: -5px;
+}
+
