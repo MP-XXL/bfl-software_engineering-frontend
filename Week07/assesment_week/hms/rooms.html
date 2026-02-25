@@ -10,7 +10,7 @@
     <header class="flex justify-between items-center bg-[#202020] p-5">
         <div class="flex items-center gap-2.5">
             <div class="bg-[#00FFF5] h-6 w-6 rounded-full"></div>
-            <span class="text-white">HMS</span>
+            <span class="text-white font-extrabold">HMS</span>
         </div>
 
         <ul class="flex gap-8 text-[#B0B0B0]">
@@ -182,7 +182,7 @@
                                 </svg>
                             </a>
                         </div>
-
+                        
                         <div class="flex justify-center">
                             <div
                                 class="border-20 border-l-[#292929] border-t-[#292929] border-r-[#00FFF5] border-b-[#00FFF5] h-38 w-38 rounded-full rotate-45 flex items-center justify-center">
@@ -536,91 +536,64 @@
                         </div>
                     </div>
         
-                    <div class="bg-[#141414] p-2.5 rounded-md grid grid-cols-1 gap-2.5 h-67.5 overflow-hidden">
-                        <div class="flex items-center gap-2.5">
-                            <p>Furniture</p>
-                            <a href="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                                    viewBox="2 2 20 20" transform="rotate(90)">
-                                    <path d="M11 3H3v8h2V6.41l6.29 6.3 1.42-1.42L6.41 5H11z"></path>
-                                    <path d="M3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-6v2h6v14H5v-6H3z"></path>
-                                </svg>
-                            </a>
-                        </div>
-        
-                        <div class="bg-[#202020] flex items-center justify-between p-1.5 rounded-md">
-                            <p>Ceiling Fan</p>
-                            <div class="flex items-center gap-1">
-                                <span>50</span>
+                    <div class="flex flex-col gap-2.5">
+                        <div class="grid grid-cols-3 gap-5">
+                            <div class="bg-[#141414] flex items-center gap-1.5 p-2.5 rounded-md">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    viewBox="2 2 20 20">
-                                    <path d="m9.71 17.71 5.7-5.71-5.7-5.71-1.42 1.42 4.3 4.29-4.3 4.29z"></path>
+                                    viewBox="2 2 20 20" class="text-[#FF05C8]">
+                                    <path
+                                        d="M4 17h16v3h2v-9c0-1.1-.9-2-2-2V5c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c-1.1 0-2 .9-2 2v9h2zM18 6v3h-5V6zM6 6h5v3H6zm-2 5h16v4H4z">
+                                    </path>
                                 </svg>
+                                <p>450</p>
+                            </div>
+                            <div class="bg-[#141414] flex items-center gap-1.5 p-2.5 rounded-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    viewBox="2 2 20 20" class="text-[#00FFA3]">
+                                    <path
+                                        d="M17 2H7C4.24 2 2 4.92 2 8.5S4.24 15 7 15c1.13 0 2.16-.49 3-1.31V21c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V8.5C22 4.92 19.76 2 17 2M7 13c-1.63 0-3-2.06-3-4.5S5.37 4 7 4s3 2.06 3 4.5S8.63 13 7 13">
+                                    </path>
+                                </svg>
+                                <p>5</p>
+                            </div>
+                            <div class="bg-[#141414] flex items-center gap-1.5 p-2.5 rounded-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    viewBox="2 2 20 20" class="text-[#FF1010]">
+                                    <path
+                                        d="M5 20h14v2H5zM20 4H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2M4 16V6h16v10z">
+                                    </path>
+                                </svg>
+                                <p>15</p>
                             </div>
                         </div>
         
-        
-        
-                        <div class="bg-[#202020] flex items-center justify-between p-1.5 rounded-md">
-                            <p>Center Table</p>
-                            <div class="flex items-center gap-1">
-                                <span>12</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    viewBox="2 2 20 20">
-                                    <path d="m9.71 17.71 5.7-5.71-5.7-5.71-1.42 1.42 4.3 4.29-4.3 4.29z"></path>
-                                </svg>
+                        <div class="grid grid-cols-3 gap-5">
+                            <div class="bg-[#141414] p-2.5 rounded-md">
+                                <p>Total Rooms</p>
+                                <span>450</span>
+                            </div>
+                            <div class="bg-[#141414] p-2.5 rounded-md">
+                                <p>Occupied</p>
+                                <span class="text-[#FFE605]">58</span>
+                            </div>
+                            <div class="bg-[#141414] p-2.5 rounded-md">
+                                <p>Floors</p>
+                                <span>3</span>
                             </div>
                         </div>
         
-        
-        
-                        <div class="bg-[#202020] flex items-center justify-between p-1.5 rounded-md">
-                            <p>Chairs</p>
-                            <div class="flex items-center gap-1">
-                                <span>123</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    viewBox="2 2 20 20">
-                                    <path d="m9.71 17.71 5.7-5.71-5.7-5.71-1.42 1.42 4.3 4.29-4.3 4.29z"></path>
-                                </svg>
+                        <div class="grid grid-cols-3 gap-5 bg-[#141414] p-2.5 rounded-md">
+                            <div>
+                                <p>Students</p>
+                                <span>6582</span>
                             </div>
-                        </div>
-        
-        
-        
-                        <div class="bg-[#202020] flex items-center justify-between p-1.5 rounded-md">
-                            <p>Refrigerator</p>
-                            <div class="flex items-center gap-1">
-                                <span>06</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    viewBox="2 2 20 20">
-                                    <path d="m9.71 17.71 5.7-5.71-5.7-5.71-1.42 1.42 4.3 4.29-4.3 4.29z"></path>
-                                </svg>
+                            <div>
+                                <p>In Hostel</p>
+                                <span class="text-[#00FFF5]">1569</span>
                             </div>
-                        </div>
-        
-        
-        
-                        <div class="bg-[#202020] flex items-center justify-between p-1.5 rounded-md">
-                            <p>Kettle</p>
-                            <div class="flex items-center gap-1">
-                                <span>12</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    viewBox="2 2 20 20">
-                                    <path d="m9.71 17.71 5.7-5.71-5.7-5.71-1.42 1.42 4.3 4.29-4.3 4.29z"></path>
-                                </svg>
-                            </div>
-                        </div>
-        
-        
-        
-                        <div class="bg-[#202020] flex items-center justify-between p-1.5 rounded-md">
-                            <p>Stool</p>
-                            <div class="flex items-center gap-1">
-                                <span>20</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    viewBox="2 2 20 20">
-                                    <path d="m9.71 17.71 5.7-5.71-5.7-5.71-1.42 1.42 4.3 4.29-4.3 4.29z"></path>
-                                </svg>
+                            <div>
+                                <p>Outside Hostel</p>
+                                <span>2500</span>
                             </div>
                         </div>
                     </div>

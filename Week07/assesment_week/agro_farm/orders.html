@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroFarm – Orders</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 flex items-center justify-center min-h-screen p-4 [font-family:'Poppins',sans-serif]">
+
+  <!-- Phone Frame -->
+  <div class="relative w-[340px] sm:w-[375px] [aspect-ratio:9/19.5] rounded-[44px] overflow-hidden shadow-2xl border-4 border-gray-700 bg-[#f0ece4] flex flex-col">
+
+    <!-- ── HEADER IMAGE ── -->
+    <div class="relative h-[110px] shrink-0 rounded-t-[40px] overflow-hidden">
+      <div class="absolute inset-0 [background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80')] bg-cover bg-center"></div>
+      <div class="absolute inset-0 bg-black/25"></div>
+
+      <!-- Status Bar -->
+      <div class="relative z-10 flex justify-between items-center px-6 pt-3 pb-1 text-white text-xs font-semibold">
+        <span>9:41</span>
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-3.5" viewBox="0 0 18 14" fill="white">
+            <rect x="0" y="8" width="3" height="6" rx="0.5"/>
+            <rect x="5" y="5" width="3" height="9" rx="0.5"/>
+            <rect x="10" y="2" width="3" height="12" rx="0.5"/>
+            <rect x="15" y="0" width="3" height="14" rx="0.5"/>
+          </svg>
+          <svg class="w-4 h-3.5" viewBox="0 0 24 18" fill="white">
+            <path d="M12 14a2 2 0 110 4 2 2 0 010-4zm0-5a7 7 0 015.196 2.304l-1.768 1.768A4.5 4.5 0 0012 11.5a4.5 4.5 0 00-3.428 1.572L6.804 11.304A7 7 0 0112 9zm0-5a12 12 0 018.485 3.515l-1.768 1.768A9.5 9.5 0 0012 7a9.5 9.5 0 00-6.717 2.783L3.515 8.015A12 12 0 0112 4z"/>
+          </svg>
+          <svg class="w-6 h-3.5" viewBox="0 0 24 12" fill="none">
+            <rect x="0.5" y="0.5" width="20" height="11" rx="2.5" stroke="white" stroke-opacity="0.5"/>
+            <rect x="2" y="2" width="15" height="8" rx="1.5" fill="white"/>
+            <path d="M22 4v4a2 2 0 000-4z" fill="white" fill-opacity="0.4"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Dealer Avatar top right -->
+      <div class="relative z-10 flex justify-end px-5 pt-2">
+        <div class="w-14 h-14 rounded-full bg-white border-2 border-white shadow-lg flex items-center justify-center">
+          <svg width="36" height="36" viewBox="0 0 60 60" fill="none">
+            <circle cx="30" cy="18" r="9" stroke="#333" stroke-width="2" fill="none"/>
+            <path d="M21 27 Q25 33 30 31 Q35 33 39 27" stroke="#333" stroke-width="2" fill="none"/>
+            <path d="M21 27 C18 34 17 44 17 52" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+            <path d="M39 27 C42 34 43 44 43 52" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+            <path d="M17 52 L43 52" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+            <path d="M30 31 L27 40 L30 45 L33 40 Z" stroke="#333" stroke-width="1.5" fill="none"/>
+            <rect x="24" y="36" width="12" height="8" rx="1.5" stroke="#333" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ORDERS TITLE ── -->
+    <div class="flex items-center gap-3 px-5 py-4 bg-[#f0ece4] shrink-0">
+      <a href="/dashboard.html" class="text-gray-800 hover:opacity-70 transition-opacity cursor-pointer">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 5l-7 7 7 7"/>
+        </svg>
+      </a>
+      <h1 class="text-gray-900 text-2xl font-bold tracking-wide flex-1 text-center pr-6">Orders</h1>
+    </div>
+
+    <!-- ── ORDER LIST ── -->
+    <div class="flex-1 overflow-y-auto px-4 pb-3 flex flex-col gap-3">
+
+      <!-- Order card component repeated 4x -->
+
+      <!-- Amal — NPK 15:15:15 (green bag) -->
+      <div class="bg-white rounded-2xl border border-gray-200 shadow-sm flex items-center gap-3 px-3 py-3 cursor-pointer hover:shadow-md transition-shadow">
+        <div class="w-16 h-16 shrink-0 flex items-center justify-center bg-gray-50 rounded-xl overflow-hidden">
+          <svg width="48" height="56" viewBox="0 0 52 60" fill="none">
+            <rect x="4" y="4" width="44" height="52" rx="6" fill="white" stroke="#e0e0e0" stroke-width="1.5"/>
+            <rect x="4" y="28" width="44" height="28" rx="3" fill="#43a047"/>
+            <rect x="4" y="46" width="44" height="10" rx="3" fill="#2e7d32"/>
+            <rect x="7" y="7" width="38" height="22" rx="3" fill="white"/>
+            <text x="26" y="18" text-anchor="middle" font-size="7" font-weight="800" fill="#1b5e20" font-family="Arial,sans-serif">NPK</text>
+            <text x="26" y="26" text-anchor="middle" font-size="5.5" fill="#444" font-family="Arial,sans-serif">15:15:15</text>
+          </svg>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <div class="w-4 h-4 rounded-full bg-[#f5c842] shrink-0"></div>
+            <span class="text-gray-900 font-bold text-sm">Amal</span>
+          </div>
+          <p class="text-gray-900 font-bold text-[15px] leading-tight">NPK -15:15:15</p>
+          <p class="text-gray-400 text-xs font-medium mt-0.5">Quantity -01</p>
+        </div>
+        <div class="flex items-center gap-1 shrink-0">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="#f5c842" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.02 2.2 2 2 0 012 .02h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          <span class="text-gray-500 text-[10px] font-medium">0774624683</span>
+        </div>
+      </div>
+
+      <!-- Nimal — NPK 0:19 (red bag) -->
+      <div class="bg-white rounded-2xl border border-gray-200 shadow-sm flex items-center gap-3 px-3 py-3 cursor-pointer hover:shadow-md transition-shadow">
+        <div class="w-16 h-16 shrink-0 flex items-center justify-center bg-gray-50 rounded-xl overflow-hidden">
+          <svg width="48" height="56" viewBox="0 0 52 60" fill="none">
+            <rect x="4" y="4" width="44" height="52" rx="6" fill="#ffebee" stroke="#e0e0e0" stroke-width="1.5"/>
+            <rect x="4" y="32" width="44" height="24" rx="3" fill="#e53935"/>
+            <rect x="4" y="48" width="44" height="8" rx="3" fill="#b71c1c"/>
+            <rect x="7" y="7" width="38" height="26" rx="3" fill="white"/>
+            <text x="26" y="19" text-anchor="middle" font-size="8" font-weight="800" fill="#c62828" font-family="Arial,sans-serif">NPK</text>
+            <text x="26" y="28" text-anchor="middle" font-size="6" fill="#555" font-family="Arial,sans-serif">0:19</text>
+            <circle cx="26" cy="42" r="4" fill="#f5c842"/>
+            <circle cx="26" cy="42" r="1.5" fill="#e65100"/>
+          </svg>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <div class="w-4 h-4 rounded-full bg-[#f5c842] shrink-0"></div>
+            <span class="text-gray-900 font-bold text-sm">Nimal</span>
+          </div>
+          <p class="text-gray-900 font-bold text-[15px] leading-tight">NPK - 0:19</p>
+          <p class="text-gray-400 text-xs font-medium mt-0.5">Quantity -04</p>
+        </div>
+        <div class="flex items-center gap-1 shrink-0">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="#f5c842" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.02 2.2 2 2 0 012 .02h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          <span class="text-gray-500 text-[10px] font-medium">0774624683</span>
+        </div>
+      </div>
+
+      <!-- Kalana — Urea 10:5 (white/blue bag) -->
+      <div class="bg-white rounded-2xl border border-gray-200 shadow-sm flex items-center gap-3 px-3 py-3 cursor-pointer hover:shadow-md transition-shadow">
+        <div class="w-16 h-16 shrink-0 flex items-center justify-center bg-gray-50 rounded-xl overflow-hidden">
+          <svg width="48" height="56" viewBox="0 0 52 60" fill="none">
+            <rect x="4" y="4" width="44" height="52" rx="6" fill="white" stroke="#e0e0e0" stroke-width="1.5"/>
+            <rect x="4" y="36" width="44" height="20" rx="3" fill="#1565c0"/>
+            <rect x="4" y="50" width="44" height="6" rx="3" fill="#0d47a1"/>
+            <rect x="7" y="7" width="38" height="30" rx="3" fill="white"/>
+            <text x="26" y="20" text-anchor="middle" font-size="7" font-weight="800" fill="#111" font-family="Arial,sans-serif">Urea</text>
+            <text x="26" y="30" text-anchor="middle" font-size="6" fill="#555" font-family="Arial,sans-serif">10:5</text>
+          </svg>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <div class="w-4 h-4 rounded-full bg-[#f5c842] shrink-0"></div>
+            <span class="text-gray-900 font-bold text-sm">Kalana</span>
+          </div>
+          <p class="text-gray-900 font-bold text-[15px] leading-tight">Urea - 10:5</p>
+          <p class="text-gray-400 text-xs font-medium mt-0.5">Quantity -01</p>
+        </div>
+        <div class="flex items-center gap-1 shrink-0">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="#f5c842" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.02 2.2 2 2 0 012 .02h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          <span class="text-gray-500 text-[10px] font-medium">0774624683</span>
+        </div>
+      </div>
+
+      <!-- Sarath — Organic 12:10 (tan/orange bag) -->
+      <div class="bg-white rounded-2xl border border-gray-200 shadow-sm flex items-center gap-3 px-3 py-3 cursor-pointer hover:shadow-md transition-shadow">
+        <div class="w-16 h-16 shrink-0 flex items-center justify-center bg-gray-50 rounded-xl overflow-hidden">
+          <svg width="48" height="56" viewBox="0 0 52 60" fill="none">
+            <rect x="4" y="4" width="44" height="52" rx="6" fill="#fff8e1" stroke="#e0e0e0" stroke-width="1.5"/>
+            <rect x="4" y="36" width="44" height="20" rx="3" fill="#bf8040"/>
+            <rect x="4" y="50" width="44" height="6" rx="3" fill="#8d5524"/>
+            <rect x="7" y="7" width="38" height="30" rx="3" fill="white"/>
+            <text x="26" y="18" text-anchor="middle" font-size="6.5" font-weight="800" fill="#111" font-family="Arial,sans-serif">Organic</text>
+            <text x="26" y="28" text-anchor="middle" font-size="6" fill="#555" font-family="Arial,sans-serif">12:10</text>
+            <path d="M18 44 C16 38 22 33 28 37 C22 35 17 40 18 44Z" fill="white" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <div class="w-4 h-4 rounded-full bg-[#f5c842] shrink-0"></div>
+            <span class="text-gray-900 font-bold text-sm">Sarath</span>
+          </div>
+          <p class="text-gray-900 font-bold text-[15px] leading-tight">Organic - 12:10</p>
+          <p class="text-gray-400 text-xs font-medium mt-0.5">Quantity -01</p>
+        </div>
+        <div class="flex items-center gap-1 shrink-0">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="#f5c842" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.02 2.2 2 2 0 012 .02h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          <span class="text-gray-500 text-[10px] font-medium">0774624683</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── BOTTOM NAV ── -->
+    <div class="bg-white border-t border-gray-200 flex items-center justify-around px-6 py-3 shrink-0">
+      <button class="text-gray-800 hover:text-[#2d6a2d] transition-colors cursor-pointer">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/>
+          <path d="M9 21V12h6v9"/>
+        </svg>
+      </button>
+      <button class="text-gray-800 hover:text-[#2d6a2d] transition-colors cursor-pointer">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <button class="text-gray-800 hover:text-[#2d6a2d] transition-colors cursor-pointer">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="8" r="4"/>
+          <path d="M6 20v-1a6 6 0 0112 0v1"/>
+        </svg>
+      </button>
+      <button class="text-gray-800 hover:text-red-500 transition-colors cursor-pointer">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 17l5-5-5-5"/>
+          <path d="M21 12H9"/>
+          <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+</body>
+</html>

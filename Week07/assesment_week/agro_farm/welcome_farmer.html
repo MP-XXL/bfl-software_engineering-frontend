@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroFarm – Welcome Farmer</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 flex items-center justify-center min-h-screen p-4 [font-family:'Poppins',sans-serif]">
+
+  <!-- Phone Frame -->
+  <div class="relative w-[340px] sm:w-[375px] [aspect-ratio:9/19.5] rounded-[44px] overflow-hidden shadow-2xl border-4 border-gray-700 flex flex-col">
+
+    <!-- Farm Background -->
+    <div class="absolute inset-0 [background-image:linear-gradient(to_bottom,rgba(20,30,50,0.62)_0%,rgba(15,25,40,0.28)_38%,rgba(8,18,35,0.55)_70%,rgba(5,12,28,0.75)_100%),url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80')] bg-cover bg-center"></div>
+
+    <!-- Status Bar -->
+    <div class="relative z-10 flex justify-between items-center px-6 pt-3 pb-1 text-white text-xs font-semibold shrink-0">
+      <span>9:41</span>
+      <div class="flex items-center gap-1.5">
+        <svg class="w-4 h-3.5" viewBox="0 0 18 14" fill="white">
+          <rect x="0" y="8" width="3" height="6" rx="0.5"/>
+          <rect x="5" y="5" width="3" height="9" rx="0.5"/>
+          <rect x="10" y="2" width="3" height="12" rx="0.5"/>
+          <rect x="15" y="0" width="3" height="14" rx="0.5"/>
+        </svg>
+        <svg class="w-4 h-3.5" viewBox="0 0 24 18" fill="white">
+          <path d="M12 14a2 2 0 110 4 2 2 0 010-4zm0-5a7 7 0 015.196 2.304l-1.768 1.768A4.5 4.5 0 0012 11.5a4.5 4.5 0 00-3.428 1.572L6.804 11.304A7 7 0 0112 9zm0-5a12 12 0 018.485 3.515l-1.768 1.768A9.5 9.5 0 0012 7a9.5 9.5 0 00-6.717 2.783L3.515 8.015A12 12 0 0112 4z"/>
+        </svg>
+        <svg class="w-6 h-3.5" viewBox="0 0 24 12" fill="none">
+          <rect x="0.5" y="0.5" width="20" height="11" rx="2.5" stroke="white" stroke-opacity="0.5"/>
+          <rect x="2" y="2" width="15" height="8" rx="1.5" fill="white"/>
+          <path d="M22 4v4a2 2 0 000-4z" fill="white" fill-opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 flex flex-col items-center px-6 pt-3 pb-6 [height:calc(100%-36px)]">
+
+      <!-- Top Row: Logo + Welcome -->
+      <div class="flex items-center gap-3 w-full mt-2">
+        <!-- Mini logo badge -->
+        <div class="w-14 h-14 rounded-full border-[3px] border-white bg-[#2d6a2d] flex flex-col items-center justify-center shadow-lg shrink-0">
+          <svg width="32" height="36" viewBox="0 0 82 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="48" cy="12" r="10" fill="white"/>
+            <path d="M16 82 C6 50 22 16 44 28 C28 44 24 64 32 82 Z" fill="white" opacity="0.88"/>
+            <path d="M58 82 C68 50 58 20 38 30 C52 48 54 66 48 82 Z" fill="white"/>
+            <path d="M38 82 C38 60 42 44 46 30" stroke="#2d6a2d" stroke-width="2.5" fill="none"/>
+            <path d="M40 42 L28 58 M40 42 L52 58" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
+          </svg>
+          <span class="text-white font-bold text-[7px] -mt-1 tracking-wide leading-none">AgroFarm</span>
+        </div>
+        <!-- Welcome text -->
+        <h1 class="text-[#f5c842] text-3xl font-black italic leading-tight drop-shadow-lg">Welcome !</h1>
+      </div>
+
+      <!-- Farmer Icon Circle -->
+      <div class="flex-1 flex items-center justify-center w-full">
+        <div class="w-48 h-48 rounded-full bg-white border-4 border-white shadow-2xl flex items-center justify-center">
+          <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Hat brim -->
+            <ellipse cx="75" cy="52" rx="38" ry="9" stroke="#111" stroke-width="3" fill="none"/>
+            <!-- Hat dome -->
+            <path d="M42 52 C42 32 108 32 108 52" stroke="#111" stroke-width="3" fill="none"/>
+            <!-- Head -->
+            <circle cx="75" cy="70" r="16" stroke="#111" stroke-width="3" fill="none"/>
+            <!-- Neck -->
+            <path d="M68 85 L68 95 M82 85 L82 95" stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Shirt / body collar -->
+            <path d="M55 95 Q60 105 75 102 Q90 105 95 95" stroke="#111" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <!-- Shirt body -->
+            <path d="M55 95 C48 108 46 122 46 132" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+            <path d="M95 95 C102 108 104 122 104 132" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+            <path d="M46 132 L104 132" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+            <!-- Overalls / straps -->
+            <path d="M62 95 L60 132 M88 95 L90 132" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 3"/>
+
+            <!-- Plant / sprout (right side) -->
+            <!-- Stem -->
+            <path d="M115 130 L115 100" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+            <!-- Left leaf -->
+            <path d="M115 115 C108 108 100 110 100 118 C100 124 108 122 115 115Z" stroke="#111" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+            <!-- Right leaf -->
+            <path d="M115 105 C122 98 130 100 130 108 C130 114 122 114 115 105Z" stroke="#111" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Farmer Label Button -->
+      <div class="w-full flex justify-center mb-6">
+        <div class="bg-[#d4a96a] text-gray-900 font-bold text-lg px-14 py-3 rounded-xl shadow-md tracking-wide">
+          Farmer
+        </div>
+      </div>
+
+      <!-- Get Started Button -->
+      <button class="bg-[#f5c842] text-gray-900 font-semibold text-base px-12 py-3.5 rounded-full shadow-lg flex items-center gap-3 hover:bg-[#e8b830] active:scale-95 transition-transform cursor-pointer">
+        Get Started
+        <span class="font-black text-lg tracking-tighter">&raquo;</span>
+      </button>
+
+      <!-- Home Indicator -->
+      <div class="mt-auto pt-5">
+        <div class="w-24 h-1 bg-white/50 rounded-full"></div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

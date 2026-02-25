@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroFarm – Marketplace</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 flex items-center justify-center min-h-screen p-4 [font-family:'Poppins',sans-serif]">
+
+  <!-- Phone Frame -->
+  <div class="relative w-[340px] sm:w-[375px] [aspect-ratio:9/19.5] rounded-[44px] overflow-hidden shadow-2xl border-4 border-gray-700 bg-[#eaf2ec] flex flex-col">
+
+    <!-- ── HEADER ── -->
+    <div class="relative h-[130px] shrink-0 overflow-hidden rounded-t-[40px]">
+      <!-- Header background: vegetables/produce image -->
+      <div class="absolute inset-0 [background-image:linear-gradient(to_bottom,rgba(10,15,25,0.45)_0%,rgba(10,15,25,0.30)_100%),url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80')] bg-cover bg-center"></div>
+
+      <!-- Status Bar -->
+      <div class="relative z-10 flex justify-between items-center px-6 pt-3 pb-1 text-white text-xs font-semibold">
+        <span>9:41</span>
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-3.5" viewBox="0 0 18 14" fill="white">
+            <rect x="0" y="8" width="3" height="6" rx="0.5"/>
+            <rect x="5" y="5" width="3" height="9" rx="0.5"/>
+            <rect x="10" y="2" width="3" height="12" rx="0.5"/>
+            <rect x="15" y="0" width="3" height="14" rx="0.5"/>
+          </svg>
+          <svg class="w-4 h-3.5" viewBox="0 0 24 18" fill="white">
+            <path d="M12 14a2 2 0 110 4 2 2 0 010-4zm0-5a7 7 0 015.196 2.304l-1.768 1.768A4.5 4.5 0 0012 11.5a4.5 4.5 0 00-3.428 1.572L6.804 11.304A7 7 0 0112 9zm0-5a12 12 0 018.485 3.515l-1.768 1.768A9.5 9.5 0 0012 7a9.5 9.5 0 00-6.717 2.783L3.515 8.015A12 12 0 0112 4z"/>
+          </svg>
+          <svg class="w-6 h-3.5" viewBox="0 0 24 12" fill="none">
+            <rect x="0.5" y="0.5" width="20" height="11" rx="2.5" stroke="white" stroke-opacity="0.5"/>
+            <rect x="2" y="2" width="15" height="8" rx="1.5" fill="white"/>
+            <path d="M22 4v4a2 2 0 000-4z" fill="white" fill-opacity="0.4"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Back + Title -->
+      <div class="relative z-10 flex items-center gap-4 px-5 pt-3">
+        <a href="/dashboard.html" class="text-white hover:opacity-75 transition-opacity cursor-pointer">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7"/>
+          </svg>
+        </a>
+        <h1 class="text-white text-2xl font-extrabold drop-shadow tracking-wide">Marketplace</h1>
+      </div>
+    </div>
+
+    <!-- ── BODY (scrollable) ── -->
+    <div class="flex-1 overflow-y-auto px-4 pt-4 pb-4">
+
+      <!-- Featured Products + Filter Pills -->
+      <div class="flex items-center gap-2 mb-4 flex-wrap">
+        <span class="text-gray-900 text-base font-bold">Featured Products</span>
+        <button class="bg-[#2d6a2d] text-white text-xs font-semibold px-4 py-1.5 rounded-full cursor-pointer hover:bg-[#245824] transition-colors">All</button>
+        <button class="bg-white text-gray-700 text-xs font-semibold px-4 py-1.5 rounded-full border border-gray-300 cursor-pointer hover:bg-gray-50 transition-colors">Organic</button>
+        <button class="bg-white text-gray-700 text-xs font-semibold px-4 py-1.5 rounded-full border border-gray-300 cursor-pointer hover:bg-gray-50 transition-colors">NPK</button>
+      </div>
+
+      <!-- Product Cards -->
+      <div class="flex flex-col gap-4">
+
+        <!-- Product 1: NPK 0:0:50 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="flex items-center gap-4 p-4">
+            <!-- Product Image -->
+            <div class="w-24 h-24 shrink-0 flex items-center justify-center">
+              <!-- NPK bag illustration: red/green/white -->
+              <svg width="80" height="90" viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="12" y="8" width="56" height="72" rx="6" fill="white" stroke="#ddd" stroke-width="1.5"/>
+                <rect x="12" y="8" width="56" height="30" rx="6" fill="#e8f5e9"/>
+                <path d="M12 32 Q20 22 40 26 Q60 22 68 32 L68 38 Q60 30 40 34 Q20 30 12 38 Z" fill="#43a047"/>
+                <rect x="12" y="52" width="56" height="28" rx="0" fill="#e53935" rx="0"/>
+                <path d="M12 52 Q20 44 40 48 Q60 44 68 52" fill="#e53935"/>
+                <rect x="12" y="74" width="56" height="6" rx="3" fill="#b71c1c"/>
+                <!-- Label -->
+                <rect x="18" y="36" width="44" height="20" rx="3" fill="white" opacity="0.9"/>
+                <text x="40" y="48" text-anchor="middle" font-size="8" font-weight="bold" fill="#1a1a1a" font-family="Poppins,sans-serif">NPK</text>
+                <text x="40" y="56" text-anchor="middle" font-size="6" fill="#555" font-family="Poppins,sans-serif">0:0:50</text>
+              </svg>
+            </div>
+            <!-- Info -->
+            <div class="flex flex-col flex-1">
+              <span class="text-[10px] text-gray-400 font-semibold tracking-widest uppercase">Organic</span>
+              <h3 class="text-gray-900 text-lg font-bold leading-tight mt-0.5">NPK -0:0:50</h3>
+              <p class="text-[#2d6a2d] text-base font-bold mt-1">Rs.2400/=</p>
+              <button class="mt-2 flex items-center gap-2 border-2 border-[#f5c842] text-gray-800 text-xs font-bold px-4 py-2 rounded-full w-fit hover:bg-[#f5c842] transition-colors cursor-pointer">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                  <line x1="3" y1="6" x2="21" y2="6"/>
+                  <path d="M16 10a4 4 0 01-8 0"/>
+                </svg>
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: NPK 15:15:15 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="flex items-center gap-4 p-4">
+            <div class="w-24 h-24 shrink-0 flex items-center justify-center">
+              <svg width="80" height="90" viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="12" y="8" width="56" height="72" rx="6" fill="white" stroke="#ddd" stroke-width="1.5"/>
+                <rect x="12" y="8" width="56" height="50" rx="6" fill="#e8f5e9"/>
+                <path d="M12 50 Q20 42 40 46 Q60 42 68 50 L68 80 Q60 80 12 80 Z" fill="#43a047"/>
+                <rect x="12" y="62" width="56" height="18" rx="3" fill="#2e7d32"/>
+                <!-- Leaf -->
+                <path d="M32 30 C28 20 44 16 48 28 C44 24 34 26 32 30Z" fill="#1b5e20" opacity="0.7"/>
+                <path d="M32 30 C36 22 48 28 32 30Z" fill="#388e3c"/>
+                <!-- Label -->
+                <rect x="16" y="22" width="48" height="24" rx="3" fill="white" opacity="0.9"/>
+                <text x="40" y="34" text-anchor="middle" font-size="8" font-weight="bold" fill="#1a1a1a" font-family="Poppins,sans-serif">NPK</text>
+                <text x="40" y="42" text-anchor="middle" font-size="6" fill="#555" font-family="Poppins,sans-serif">15:15:15</text>
+              </svg>
+            </div>
+            <div class="flex flex-col flex-1">
+              <span class="text-[10px] text-gray-400 font-semibold tracking-widest uppercase">Organic</span>
+              <h3 class="text-gray-900 text-lg font-bold leading-tight mt-0.5">NPK -15:15:15</h3>
+              <p class="text-[#2d6a2d] text-base font-bold mt-1">Rs.1500/=</p>
+              <button class="mt-2 flex items-center gap-2 border-2 border-[#f5c842] text-gray-800 text-xs font-bold px-4 py-2 rounded-full w-fit hover:bg-[#f5c842] transition-colors cursor-pointer">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                  <line x1="3" y1="6" x2="21" y2="6"/>
+                  <path d="M16 10a4 4 0 01-8 0"/>
+                </svg>
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: NPK 19:19:19 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="flex items-center gap-4 p-4">
+            <div class="w-24 h-24 shrink-0 flex items-center justify-center">
+              <svg width="80" height="90" viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="12" y="8" width="56" height="72" rx="6" fill="white" stroke="#ddd" stroke-width="1.5"/>
+                <rect x="12" y="8" width="56" height="72" rx="6" fill="#ffebee"/>
+                <rect x="12" y="42" width="56" height="38" rx="3" fill="#e53935"/>
+                <rect x="12" y="68" width="56" height="12" rx="3" fill="#b71c1c"/>
+                <!-- Label -->
+                <rect x="16" y="14" width="48" height="28" rx="3" fill="white" opacity="0.95"/>
+                <text x="40" y="26" text-anchor="middle" font-size="7" font-weight="bold" fill="#1a1a1a" font-family="Poppins,sans-serif">Shriram</text>
+                <text x="40" y="34" text-anchor="middle" font-size="8" font-weight="bold" fill="#c62828" font-family="Poppins,sans-serif">NPK</text>
+                <text x="40" y="40" text-anchor="middle" font-size="6" fill="#555" font-family="Poppins,sans-serif">19:19:19</text>
+                <!-- Flower / sunflower icon -->
+                <circle cx="40" cy="56" r="6" fill="#f5c842"/>
+                <circle cx="40" cy="56" r="3" fill="#e65100"/>
+                <path d="M40 48 L40 44M40 64 L40 68M32 56 L28 56M48 56 L52 56M34 50 L31 47M46 62 L49 65M34 62 L31 65M46 50 L49 47" stroke="#f5c842" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="flex flex-col flex-1">
+              <span class="text-[10px] text-gray-400 font-semibold tracking-widest uppercase">Organic</span>
+              <h3 class="text-gray-900 text-lg font-bold leading-tight mt-0.5">NPK -19:19:19</h3>
+              <p class="text-[#2d6a2d] text-base font-bold mt-1">Rs.800/=</p>
+              <button class="mt-2 flex items-center gap-2 border-2 border-[#f5c842] text-gray-800 text-xs font-bold px-4 py-2 rounded-full w-fit hover:bg-[#f5c842] transition-colors cursor-pointer">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                  <line x1="3" y1="6" x2="21" y2="6"/>
+                  <path d="M16 10a4 4 0 01-8 0"/>
+                </svg>
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Extra card -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="flex items-center gap-4 p-4">
+            <div class="w-24 h-24 shrink-0 flex items-center justify-center">
+              <svg width="80" height="90" viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="12" y="8" width="56" height="72" rx="6" fill="white" stroke="#ddd" stroke-width="1.5"/>
+                <rect x="12" y="8" width="56" height="72" rx="6" fill="#e3f2fd"/>
+                <rect x="12" y="48" width="56" height="32" rx="3" fill="#1565c0"/>
+                <rect x="12" y="68" width="56" height="12" rx="3" fill="#0d47a1"/>
+                <rect x="16" y="14" width="48" height="30" rx="3" fill="white" opacity="0.95"/>
+                <text x="40" y="28" text-anchor="middle" font-size="8" font-weight="bold" fill="#1a1a1a" font-family="Poppins,sans-serif">NPK</text>
+                <text x="40" y="38" text-anchor="middle" font-size="6" fill="#555" font-family="Poppins,sans-serif">20:20:20</text>
+              </svg>
+            </div>
+            <div class="flex flex-col flex-1">
+              <span class="text-[10px] text-gray-400 font-semibold tracking-widest uppercase">NPK</span>
+              <h3 class="text-gray-900 text-lg font-bold leading-tight mt-0.5">NPK -20:20:20</h3>
+              <p class="text-[#2d6a2d] text-base font-bold mt-1">Rs.3200/=</p>
+              <button class="mt-2 flex items-center gap-2 border-2 border-[#f5c842] text-gray-800 text-xs font-bold px-4 py-2 rounded-full w-fit hover:bg-[#f5c842] transition-colors cursor-pointer">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                  <line x1="3" y1="6" x2="21" y2="6"/>
+                  <path d="M16 10a4 4 0 01-8 0"/>
+                </svg>
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── BOTTOM NAV ── -->
+    <div class="bg-white border-t border-gray-200 flex items-center justify-around px-6 py-3 shrink-0">
+      <button class="text-gray-800 hover:text-[#2d6a2d] transition-colors cursor-pointer">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/>
+          <path d="M9 21V12h6v9"/>
+        </svg>
+      </button>
+      <button class="text-gray-800 hover:text-[#2d6a2d] transition-colors cursor-pointer">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <button class="text-gray-800 hover:text-[#2d6a2d] transition-colors cursor-pointer">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="8" r="4"/><path d="M6 20v-1a6 6 0 0112 0v1"/>
+        </svg>
+      </button>
+      <button class="text-gray-800 hover:text-red-500 transition-colors cursor-pointer">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 17l5-5-5-5"/><path d="M21 12H9"/><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+</body>
+</html>

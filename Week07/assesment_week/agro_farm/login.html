@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroFarm – Login</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 min-h-screen p-4 font-['Poppins',sans-serif]">
+
+  <!-- Main Container -->
+  <div class="max-w-6xl mx-auto min-h-screen flex flex-col justify-center">
+
+    <!-- Farm Background with overlay -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(20,35,55,0.58)_0%,rgba(15,28,45,0.20)_30%,rgba(10,20,40,0.48)_60%,rgba(8,18,35,0.70)_100%),url('/src/img/unsplash_b-0-LM0wzWM.png')] bg-cover bg-center"></div>
+
+    <!-- Status Bar -->
+    <div class="relative z-10 flex justify-between items-center px-6 pt-3 pb-1 text-white text-xs font-semibold">
+      <span>9:41</span>
+      <div class="flex items-center gap-1.5">
+        <!-- Signal Bars -->
+        <svg class="w-4 h-3.5" viewBox="0 0 18 14" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="8" width="3" height="6" rx="0.5"/>
+          <rect x="5" y="5" width="3" height="9" rx="0.5"/>
+          <rect x="10" y="2" width="3" height="12" rx="0.5"/>
+          <rect x="15" y="0" width="3" height="14" rx="0.5"/>
+        </svg>
+        <!-- WiFi -->
+        <svg class="w-4 h-3.5" viewBox="0 0 24 18" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 14a2 2 0 110 4 2 2 0 010-4zm0-5a7 7 0 015.196 2.304l-1.768 1.768A4.5 4.5 0 0012 11.5a4.5 4.5 0 00-3.428 1.572L6.804 11.304A7 7 0 0112 9zm0-5a12 12 0 018.485 3.515l-1.768 1.768A9.5 9.5 0 0012 7a9.5 9.5 0 00-6.717 2.783L3.515 8.015A12 12 0 0112 4z"/>
+        </svg>
+        <!-- Battery -->
+        <svg class="w-6 h-3.5" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" y="0.5" width="20" height="11" rx="2.5" stroke="white" stroke-opacity="0.5"/>
+          <rect x="2" y="2" width="15" height="8" rx="1.5" fill="white"/>
+          <path d="M22 4v4a2 2 0 000-4z" fill="white" fill-opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 flex flex-col items-center px-6 py-8 max-w-md mx-auto">
+
+      <!-- Logo Badge -->
+      <div class="flex flex-col items-center mb-8">
+            <img src="/src/img/Ellipse 3.png" alt="AgroFarm Logo" class="w-32 h-32 md:w-48 md:h-48">
+      </div>
+
+      <!-- Account Prompts -->
+      <div class="text-center mb-8 space-y-4">
+        <!-- Login prompt -->
+        <div>
+          <p class="text-white text-base md:text-lg font-medium drop-shadow">Already have an account ?</p>
+          <p class="text-[#f5c842] text-base md:text-lg font-semibold mt-2 cursor-pointer hover:underline">
+            <a href="/login.html">Login AgroFarm</a>
+          </p>
+        </div>
+        <!-- Register prompt -->
+        <div class="flex items-center justify-center gap-2">
+          <p class="text-white text-base md:text-lg font-medium drop-shadow">Don't have account ?</p>
+          <p class="text-[#f5c842] text-base md:text-lg font-semibold cursor-pointer hover:underline">
+            <a href="/signup.html">Register now</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Username Input -->
+      <div class="w-full mb-8">
+        <div class="flex items-center bg-white/80 backdrop-blur-sm rounded-full px-6 py-4 shadow-lg">
+          <input
+            type="text"
+            placeholder="User Name"
+            class="flex-1 bg-transparent text-gray-700 placeholder-gray-500 text-base md:text-lg font-medium outline-none font-['Poppins',sans-serif]"
+          />
+          <!-- User icon -->
+          <svg class="w-6 h-6 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M6 20v-1a6 6 0 0112 0v1"/>
+            <path d="M18 15l2 2 4-4" stroke="#6b7280" stroke-width="1.8"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Login Button -->
+      <button class="bg-[#f5c842] text-gray-900 font-bold text-base md:text-lg px-12 py-4 rounded-full shadow-lg flex items-center gap-3 hover:bg-[#e8b830] active:scale-95 transition-transform cursor-pointer">
+        <a href="/dashboard.html">Login</a>
+        <!-- Arrow right icon -->
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 3h6v6M10 14L21 3M21 9v11a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h6"/>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+
+</body>
+</html>

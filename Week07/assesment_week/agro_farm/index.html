@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroFarm</title>
+  <link rel="stylesheet" href="/src/output.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 min-h-screen p-4 font-['Poppins',sans-serif]">
+
+  <!-- Main Container -->
+  <div class="max-w-6xl mx-auto min-h-screen flex flex-col justify-center">
+
+    <!-- Farm Background with overlay -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(20,35,55,0.65)_0%,rgba(15,28,45,0.30)_40%,rgba(10,20,40,0.70)_100%),url('/src/img/unsplash_b-0-LM0wzWM.png')] bg-cover bg-center"></div>
+
+    <!-- Status Bar -->
+    <div class="relative z-10 flex justify-between items-center px-6 pt-3 pb-1 text-white text-xs font-semibold">
+      <span>9:41</span>
+      <div class="flex items-center gap-1.5">
+        <!-- Signal Bars -->
+        <svg class="w-4 h-3.5" viewBox="0 0 18 14" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="8" width="3" height="6" rx="0.5"/>
+          <rect x="5" y="5" width="3" height="9" rx="0.5"/>
+          <rect x="10" y="2" width="3" height="12" rx="0.5"/>
+          <rect x="15" y="0" width="3" height="14" rx="0.5"/>
+        </svg>
+        <!-- WiFi -->
+        <svg class="w-4 h-3.5" viewBox="0 0 24 18" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 14a2 2 0 110 4 2 2 0 010-4zm0-5a7 7 0 015.196 2.304l-1.768 1.768A4.5 4.5 0 0012 11.5a4.5 4.5 0 00-3.428 1.572L6.804 11.304A7 7 0 0112 9zm0-5a12 12 0 018.485 3.515l-1.768 1.768A9.5 9.5 0 0012 7a9.5 9.5 0 00-6.717 2.783L3.515 8.015A12 12 0 0112 4z"/>
+        </svg>
+        <!-- Battery -->
+        <svg class="w-6 h-3.5" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" y="0.5" width="20" height="11" rx="2.5" stroke="white" stroke-opacity="0.5"/>
+          <rect x="2" y="2" width="15" height="8" rx="1.5" fill="white"/>
+          <path d="M22 4v4a2 2 0 000-4z" fill="white" fill-opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 flex flex-col items-center justify-center px-6 py-8">
+
+      <!-- Hero Heading -->
+      <div class="text-center mb-8 md:mb-12">
+        <p class="text-white text-2xl md:text-4xl lg:text-5xl font-bold leading-snug drop-shadow-lg mb-2">
+          Grow smarter with
+        </p>
+        <div class="relative inline-block">
+          <p class="text-white text-2xl md:text-4xl lg:text-5xl font-bold leading-snug drop-shadow-lg">
+            Our <span class="text-[#f5c842]">AgroFarm</span>
+          </p>
+          <!-- Swash / ribbon underline -->
+          <svg class="absolute -right-3 -bottom-2 w-[110px] h-[26px] md:w-[140px] md:h-[32px]" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 22 Q30 5 60 14 Q90 23 115 8" stroke="#f5c842" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M104 4 L116 9 L106 17" stroke="#f5c842" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Logo Badge -->
+      <a href="/discover.html" class="group">
+        <div class="flex flex-col items-center rounded-full transition-transform group-hover:scale-105">
+            <img src="/src/img/Ellipse 3.png" alt="AgroFarm Logo" class="w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64">
+        </div>
+      </a>
+
+      <!-- Bottom Label -->
+      <a href="/discover.html" class="mt-8 md:mt-12">
+        <p class="text-white/75 text-sm md:text-base font-medium tracking-wider hover:text-white transition-colors">AgroFarm</p>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>

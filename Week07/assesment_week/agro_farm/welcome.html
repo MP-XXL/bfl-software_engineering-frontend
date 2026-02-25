@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroFarm – Welcome</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 flex items-center justify-center min-h-screen p-4 [font-family:'Poppins',sans-serif]">
+
+  <!-- Phone Frame -->
+  <div class="h-screen">
+
+    <!-- Farm Background with overlay -->
+    <div class="absolute inset-0 [background-image:linear-gradient(to_bottom,rgba(20,35,55,0.55)_0%,rgba(15,28,45,0.18)_30%,rgba(10,20,40,0.45)_60%,rgba(8,18,35,0.72)_100%),url('/src/img/unsplash_b-0-LM0wzWM.png')] bg-cover bg-center"></div>
+
+    <!-- Status Bar -->
+    <div class="relative z-10 sm:hidden flex justify-between items-center px-7 pt-3 pb-1 text-white text-xs font-semibold">
+      <span>9:41</span>
+      <div class="flex items-center gap-1.5">
+        <!-- Signal Bars -->
+        <svg class="w-4 h-3.5" viewBox="0 0 18 14" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="8" width="3" height="6" rx="0.5"/>
+          <rect x="5" y="5" width="3" height="9" rx="0.5"/>
+          <rect x="10" y="2" width="3" height="12" rx="0.5"/>
+          <rect x="15" y="0" width="3" height="14" rx="0.5"/>
+        </svg>
+        <!-- WiFi -->
+        <svg class="w-4 h-3.5" viewBox="0 0 24 18" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 14a2 2 0 110 4 2 2 0 010-4zm0-5a7 7 0 015.196 2.304l-1.768 1.768A4.5 4.5 0 0012 11.5a4.5 4.5 0 00-3.428 1.572L6.804 11.304A7 7 0 0112 9zm0-5a12 12 0 018.485 3.515l-1.768 1.768A9.5 9.5 0 0012 7a9.5 9.5 0 00-6.717 2.783L3.515 8.015A12 12 0 0112 4z"/>
+        </svg>
+        <!-- Battery -->
+        <svg class="w-6 h-3.5" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" y="0.5" width="20" height="11" rx="2.5" stroke="white" stroke-opacity="0.5"/>
+          <rect x="2" y="2" width="15" height="8" rx="1.5" fill="white"/>
+          <path d="M22 4v4a2 2 0 000-4z" fill="white" fill-opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 flex flex-col items-center px-6 pb-6 pt-3 [height:calc(100%-36px)]">
+
+      <!-- Logo Badge -->
+      <div class="flex flex-col items-center rounded-full ">
+            <img src="/src/img/Ellipse 3.png" alt="" class="w-34 h-34">
+      </div>
+
+      <!-- Welcome Heading -->
+      <div class="text-center mt-5">
+        <h1 class="text-[#f5c842] text-3xl sm:text-4xl font-black italic leading-tight drop-shadow-lg">
+          Welcome To<br/>AgroFarm
+        </h1>
+      </div>
+
+      <!-- Choose Language Row -->
+      <div class="flex items-center gap-3 mt-5 w-full justify-center">
+        <span class="text-white text-xs font-medium tracking-wide">Choose Language</span>
+        <!-- Hamburger -->
+        <svg class="w-4 h-4 text-white" fill="white" viewBox="0 0 24 24">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="text-white text-xs font-semibold">English</span>
+        <span class="text-[#f5c842] text-xs font-semibold underline cursor-pointer">Sinhala</span>
+      </div>
+
+      <!-- Role Selection Cards -->
+      <div class="flex justify-between w-full mt-5 gap-4">
+
+        <!-- Farmer Card -->
+        <div class="flex flex-col items-center gap-3 flex-1 cursor-pointer">
+          <div class="w-24 h-24 rounded-full bg-white/90 flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
+            <!-- Farmer Icon -->
+            <svg width="54" height="54" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Hat brim -->
+              <ellipse cx="30" cy="22" rx="18" ry="4" stroke="#333" stroke-width="2" fill="none"/>
+              <!-- Hat top -->
+              <path d="M18 22 C18 14 42 14 42 22" stroke="#333" stroke-width="2" fill="none"/>
+              <!-- Head -->
+              <circle cx="30" cy="30" r="7" stroke="#333" stroke-width="2" fill="none"/>
+              <!-- Body -->
+              <path d="M23 37 C20 42 18 50 18 55" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+              <path d="M37 37 C40 42 42 50 42 55" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+              <path d="M23 37 Q30 42 37 37" stroke="#333" stroke-width="2" fill="none"/>
+              <!-- Plant sprig -->
+              <path d="M42 38 C44 35 48 34 50 36" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M44 40 C46 37 50 36 52 38" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M43 42 L50 36" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <button class="bg-[#f5c842] text-gray-900 font-bold text-sm px-8 py-2.5 rounded-full shadow-md w-full hover:bg-[#e8b830] active:scale-95 transition-transform">
+            <a href="/login.html">Farmer</a>
+          </button>
+        </div>
+
+        <!-- Dealer Card -->
+        <div class="flex flex-col items-center gap-3 flex-1 cursor-pointer">
+          <div class="w-24 h-24 rounded-full bg-white/90 flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
+            <!-- Dealer Icon -->
+            <svg width="54" height="54" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Head -->
+              <circle cx="30" cy="18" r="9" stroke="#333" stroke-width="2" fill="none"/>
+              <!-- Collar / tie area -->
+              <path d="M21 27 Q25 32 30 30 Q35 32 39 27" stroke="#333" stroke-width="2" fill="none"/>
+              <!-- Body / jacket -->
+              <path d="M21 27 C18 33 17 42 17 50" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+              <path d="M39 27 C42 33 43 42 43 50" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+              <path d="M17 50 L43 50" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+              <!-- Tie -->
+              <path d="M30 30 L27 38 L30 43 L33 38 Z" stroke="#333" stroke-width="1.5" fill="none"/>
+              <!-- ID badge / card -->
+              <rect x="24" y="34" width="12" height="9" rx="1.5" stroke="#333" stroke-width="1.5"/>
+              <line x1="26" y1="37" x2="36" y2="37" stroke="#333" stroke-width="1"/>
+              <line x1="26" y1="40" x2="34" y2="40" stroke="#333" stroke-width="1"/>
+            </svg>
+          </div>
+          <button class="bg-[#f5c842] text-gray-900 font-bold text-sm px-8 py-2.5 rounded-full shadow-md w-full hover:bg-[#e8b830] active:scale-95 transition-transform">
+            <a href="/login.html">Dealer</a>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Tagline -->
+      <p class="text-white text-center text-xs sm:text-sm font-medium mt-6 leading-snug drop-shadow-md">
+        We're popular in agriculture<br/>market globally
+      </p>
+
+      <!-- Discover More Button -->
+      <button class="mt-4 bg-[#f5c842] text-gray-900 font-semibold text-sm px-10 py-2.5 rounded-full shadow-lg hover:bg-[#e8b830] active:scale-95 transition-transform">
+        <a href="/login.html">Discover More</a>
+      </button>
+
+    </div>
+  </div>
+
+</body>
+</html>

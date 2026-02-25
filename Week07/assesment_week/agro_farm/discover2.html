@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroFarm – Discover</title>
+  <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body class="bg-gray-900 flex items-center justify-center min-h-screen p-4 [font-family:'Poppins',sans-serif]">
+
+  <!-- Phone Frame -->
+  <div class="min-h-screen">
+
+    <!-- Farm Background with overlay -->
+    <div class="absolute inset-0 [background-image:linear-gradient(to_bottom,rgba(20,35,55,0.60)_0%,rgba(15,28,45,0.20)_35%,rgba(10,20,40,0.55)_65%,rgba(8,18,35,0.75)_100%),url('/src/img/unsplash_b-0-LM0wzWM.png')] bg-cover bg-center"></div>
+
+    <!-- Status Bar -->
+    <div class="relative z-10 sm:hidden flex justify-between items-center px-7 pt-3 pb-1 text-white text-xs font-semibold">
+      <span>9:41</span>
+      <div class="flex items-center gap-1.5">
+        <!-- Signal Bars -->
+        <svg class="w-4 h-3.5" viewBox="0 0 18 14" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="8" width="3" height="6" rx="0.5"/>
+          <rect x="5" y="5" width="3" height="9" rx="0.5"/>
+          <rect x="10" y="2" width="3" height="12" rx="0.5"/>
+          <rect x="15" y="0" width="3" height="14" rx="0.5"/>
+        </svg>
+        <!-- WiFi -->
+        <svg class="w-4 h-3.5" viewBox="0 0 24 18" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 14a2 2 0 110 4 2 2 0 010-4zm0-5a7 7 0 015.196 2.304l-1.768 1.768A4.5 4.5 0 0012 11.5a4.5 4.5 0 00-3.428 1.572L6.804 11.304A7 7 0 0112 9zm0-5a12 12 0 018.485 3.515l-1.768 1.768A9.5 9.5 0 0012 7a9.5 9.5 0 00-6.717 2.783L3.515 8.015A12 12 0 0112 4z"/>
+        </svg>
+        <!-- Battery -->
+        <svg class="w-6 h-3.5" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" y="0.5" width="20" height="11" rx="2.5" stroke="white" stroke-opacity="0.5"/>
+          <rect x="2" y="2" width="15" height="8" rx="1.5" fill="white"/>
+          <path d="M22 4v4a2 2 0 000-4z" fill="white" fill-opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 flex flex-col items-center justify-between px-6 pb-8 pt-4 [height:calc(100%-36px)]">
+
+      <!-- Logo Badge (top center) -->
+      <a href="/welcome.html">
+        <div class="flex flex-col items-center rounded-full ">
+        <img src="/src/img/Ellipse 3.png" alt="" class="w-48 h-48">
+      </div>
+      </a>
+
+      <!-- Description Text -->
+      <div class="text-center px-2 my-20">
+        <p class="text-white text-base sm:text-lg font-medium leading-relaxed drop-shadow-lg">
+          Access expert agricultural guidance<br/>
+          tailored to your needs, ensuring optimal<br/>
+          productivity and success in your farming<br/>
+          endeavors.
+        </p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center justify-between w-full px-2 mb-4">
+
+        <!-- Discover More Button -->
+        <button class="bg-[#2d6a2d] text-white font-bold text-sm px-6 py-4 rounded-full shadow-lg w-[44%] leading-tight hover:bg-[#245824] active:scale-95 transition-transform cursor-pointer">
+          <a href="/login.html">Discover<br/>More</a>
+        </button>
+
+        <!-- Skip Button -->
+        <button
+          class="bg-[#f5c842] text-gray-900 font-bold text-base px-6 py-4 rounded-full shadow-lg w-[44%] flex items-center justify-center gap-2 hover:bg-[#e8b830] active:scale-95 transition-transform cursor-pointer">
+          <a href="/welcome.html">
+            Skip
+            <span class="text-lg font-black">&raquo;</span>
+          </a>
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroFarm – Payment</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 flex items-center justify-center min-h-screen p-4 [font-family:'Poppins',sans-serif]">
+
+  <!-- Phone Frame -->
+  <div class="relative w-[340px] sm:w-[375px] [aspect-ratio:9/19.5] rounded-[44px] overflow-hidden shadow-2xl border-4 border-gray-700 bg-[#8faf78] flex flex-col">
+
+    <!-- Status Bar -->
+    <div class="flex justify-between items-center px-6 pt-3 pb-2 text-gray-900 text-xs font-semibold shrink-0">
+      <span>9:41</span>
+      <div class="flex items-center gap-1.5">
+        <svg class="w-4 h-3.5" viewBox="0 0 18 14" fill="#111">
+          <rect x="0" y="8" width="3" height="6" rx="0.5"/>
+          <rect x="5" y="5" width="3" height="9" rx="0.5"/>
+          <rect x="10" y="2" width="3" height="12" rx="0.5"/>
+          <rect x="15" y="0" width="3" height="14" rx="0.5"/>
+        </svg>
+        <svg class="w-4 h-3.5" viewBox="0 0 24 18" fill="#111">
+          <path d="M12 14a2 2 0 110 4 2 2 0 010-4zm0-5a7 7 0 015.196 2.304l-1.768 1.768A4.5 4.5 0 0012 11.5a4.5 4.5 0 00-3.428 1.572L6.804 11.304A7 7 0 0112 9zm0-5a12 12 0 018.485 3.515l-1.768 1.768A9.5 9.5 0 0012 7a9.5 9.5 0 00-6.717 2.783L3.515 8.015A12 12 0 0112 4z"/>
+        </svg>
+        <svg class="w-6 h-3.5" viewBox="0 0 24 12" fill="none">
+          <rect x="0.5" y="0.5" width="20" height="11" rx="2.5" stroke="#111" stroke-opacity="0.5"/>
+          <rect x="2" y="2" width="15" height="8" rx="1.5" fill="#111"/>
+          <path d="M22 4v4a2 2 0 000-4z" fill="#111" fill-opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Main scrollable content -->
+    <div class="flex-1 flex flex-col px-4 pb-4 gap-4 overflow-y-auto">
+
+      <!-- ── Payment Header Card ── -->
+      <div class="bg-white rounded-2xl px-5 py-5 shadow-sm">
+        <!-- Back -->
+        <a href="/dashboard.html" class="text-gray-800 hover:opacity-70 transition-opacity cursor-pointer mb-3">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7"/>
+          </svg>
+        </a>
+        <h1 class="text-gray-900 text-xl font-semibold text-center tracking-wide">Payment</h1>
+      </div>
+
+      <!-- ── Order Summary Card ── -->
+      <div class="bg-white rounded-2xl px-5 py-5 shadow-sm">
+        <!-- Price Amount -->
+        <div class="flex justify-between items-center mb-3">
+          <div>
+            <p class="text-gray-900 text-sm font-semibold leading-tight">Price Amount</p>
+            <p class="text-gray-900 text-sm font-semibold leading-tight mt-1">Category</p>
+          </div>
+          <div class="text-right">
+            <p class="text-gray-700 text-sm font-medium">Rs.1500/=</p>
+            <p class="text-gray-700 text-sm font-medium mt-1">NPK -15</p>
+          </div>
+        </div>
+        <!-- Divider -->
+        <div class="border-t border-gray-100 my-2"></div>
+        <!-- Delivery / Seller -->
+        <div class="flex justify-between items-center mt-2">
+          <div>
+            <p class="text-gray-900 text-sm font-semibold leading-tight">Delivery</p>
+            <p class="text-gray-900 text-sm font-semibold leading-tight mt-1">Seller</p>
+          </div>
+          <div class="text-right">
+            <p class="text-gray-700 text-sm font-medium">3 - 4 Day</p>
+            <p class="text-gray-700 text-sm font-medium mt-1">Saman</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Card Details Card ── -->
+      <div class="bg-white rounded-2xl px-5 py-4 shadow-sm">
+        <!-- Header row: label + card logos -->
+        <div class="flex items-center justify-between mb-3">
+          <p class="text-gray-700 text-sm font-medium">Enter Card Details</p>
+          <div class="flex items-center gap-2">
+            <!-- VISA logo -->
+            <span class="text-[#1a1f71] font-black text-lg italic tracking-tight leading-none">VISA</span>
+            <!-- Mastercard circles -->
+            <div class="relative w-9 h-6 flex items-center">
+              <div class="absolute left-0 w-6 h-6 rounded-full bg-[#eb001b] opacity-90"></div>
+              <div class="absolute left-3 w-6 h-6 rounded-full bg-[#f79e1b] opacity-90"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Total amount display box -->
+        <div class="bg-[#f5f5f5] rounded-xl px-4 py-4 flex items-center justify-center">
+          <p class="text-gray-900 text-xl font-bold tracking-wide">Total amount : 1500/=</p>
+        </div>
+      </div>
+
+      <!-- ── Contact Seller Input ── -->
+      <div class="bg-white rounded-full px-5 py-4 shadow-sm flex items-center justify-between">
+        <p class="text-gray-500 text-sm italic font-medium">Contact Seller</p>
+        <!-- Phone ring icon -->
+        <div class="w-9 h-9 rounded-full bg-[#f0f0f0] flex items-center justify-center">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.02 2.2 2 2 0 012 .02h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            <!-- Ring arc -->
+            <path d="M14.05 2a9 9 0 018 7.94"/>
+            <path d="M14.05 6A5 5 0 0118 10"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Spacer -->
+      <div class="flex-1 min-h-[20px]"></div>
+
+      <!-- ── Pay Now Button ── -->
+      <button class="w-full bg-[#e07b2a] text-white font-bold text-lg py-4 rounded-full shadow-lg hover:bg-[#c96e22] active:scale-95 transition-all cursor-pointer">
+        Pay Now
+      </button>
+
+      <!-- Home Indicator -->
+      <div class="flex justify-center pb-1">
+        <div class="w-24 h-1 bg-black/20 rounded-full"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
