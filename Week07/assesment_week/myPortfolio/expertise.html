@@ -4,11 +4,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expertise</title>
-    <link rel="stylesheet" href="/dist/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/src/output.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
-<body style="background-image: url(/dist/ASSETS/IMG/jackson-sophat-_t-l5FFH8VA-unsplash.jpg);" class="bg-cover">
+<body style="background-image: url(/src/ASSETS/IMG/jackson-sophat-_t-l5FFH8VA-unsplash.jpg);" class="bg-cover text-white min-h-screen">
+    <!-- Navigation -->
+    <header>
+        <nav class="flex justify-between items-center bg-black bg-opacity-80 p-2.5 rounded-md w-full fixed z-40">
+            <div>
+                <a href="index.html" class="font-bold text-3xl bg-red-500 px-4 rounded-md bg-linear-to-tr from-red-500 to-red-200 shadow-md">MP</a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <ul class="hidden lg:flex space-x-6">
+                <li><a href="index.html#home" class="hover:text-red-400 transition-colors">Home</a></li>
+                <li><a href="expertise.html" class="hover:text-red-400 transition-colors">Experience</a></li>
+                <li><a href="index.html#portfolio" class="hover:text-red-400 transition-colors">Portfolio</a></li>
+                <li><a href="index.html#about" class="hover:text-red-400 transition-colors">About</a></li>
+                <li><a href="index.html#contact" class="hover:text-red-400 transition-colors">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile menu button -->
+            <input type="checkbox" id="mobile-menu-toggle" class="hidden peer">
+            <label for="mobile-menu-toggle" class="lg:hidden cursor-pointer">
+                <i class='bx bx-menu text-3xl'></i>
+            </label>
+        </nav>
+        
+        <!-- Mobile menu -->
+        <div class="hidden peer-checked:flex lg:hidden bg-black bg-opacity-90 fixed top-16 left-0 right-0 z-30">
+            <ul class="flex flex-col space-y-4 p-4 w-full">
+                <li><a href="index.html#home" class="hover:text-red-400 transition-colors block py-2">Home</a></li>
+                <li><a href="expertise.html" class="hover:text-red-400 transition-colors block py-2">Experience</a></li>
+                <li><a href="index.html#portfolio" class="hover:text-red-400 transition-colors block py-2">Portfolio</a></li>
+                <li><a href="index.html#about" class="hover:text-red-400 transition-colors block py-2">About</a></li>
+                <li><a href="index.html#contact" class="hover:text-red-400 transition-colors block py-2">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-24 px-4">
+        <section class="max-w-6xl mx-auto">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-center">My Expertise</h1>
+            
+            <!-- Technical Skills -->
+            <div class="mb-16">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-red-400">Technical Skills</h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+                    <div class="bg-black bg-opacity-80 rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-4 text-red-300">Frontend Development</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span>HTML/CSS</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-3">
+                                    <div class="bg-red-500 h-3 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span>JavaScript</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-3">
+                                    <div class="bg-red-500 h-3 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span>React</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-3">
+                                    <div class="bg-red-500 h-3 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span>Tailwind CSS</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-3">
+                                    <div class="bg-red-500 h-3 rounded-full" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-black bg-opacity-80 rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-4 text-red-300">Backend Development</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span>Python</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-3">
+                                    <div class="bg-blue-500 h-3 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span>FastAPI</span>
+                                    <span>82%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-3">
+                                    <div class="bg-blue-500 h-3 rounded-full" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span>MySQL/PostgreSQL</span>
+                                    <span>78%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-3">
+                                    <div class="bg-blue-500 h-3 rounded-full" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span>Docker</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-3">
+                                    <div class="bg-blue-500 h-3 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Experience Timeline -->
+            <div class="mb-16">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-red-400">Professional Experience</h2>
+                
+                <div class="relative">
+                    <div class="absolute left-6 sm:left-8 top-0 bottom-0 w-0.5 bg-red-500"></div>
+                    
+                    <div class="relative mb-6 sm:mb-8 ml-12 sm:ml-16">
+                        <div class="absolute -left-6 sm:-left-8 w-4 h-4 bg-red-500 rounded-full"></div>
+                        <div class="bg-black bg-opacity-80 rounded-lg p-4 sm:p-6">
+                            <h3 class="text-lg sm:text-xl font-bold text-red-300">Full-Stack Developer</h3>
+                            <p class="text-gray-400 mb-2 text-sm sm:text-base">Software Engineering Program • 2024 - Present</p>
+                            <p class="text-gray-300 text-sm sm:text-base">Developing scalable web applications using modern technologies. Building RESTful APIs, implementing responsive frontend designs, and working with database architecture.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative mb-6 sm:mb-8 ml-12 sm:ml-16">
+                        <div class="absolute -left-6 sm:-left-8 w-4 h-4 bg-red-500 rounded-full"></div>
+                        <div class="bg-black bg-opacity-80 rounded-lg p-4 sm:p-6">
+                            <h3 class="text-lg sm:text-xl font-bold text-red-300">Mechanical Engineer</h3>
+                            <p class="text-gray-400 mb-2 text-sm sm:text-base">Engineering Background • 2018 - 2023</p>
+                            <p class="text-gray-300 text-sm sm:text-base">Applied analytical thinking and problem-solving skills in engineering projects. Transitioned to software development bringing structured thinking and systems-level mindset.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Education -->
+            <div class="mb-16">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-red-400">Education & Certifications</h2>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
+                    <div class="bg-black bg-opacity-80 rounded-lg p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold text-red-300 mb-2">Software Engineering</h3>
+                        <p class="text-gray-400 mb-2 text-sm sm:text-base">BLOCKFUSE LABS • 2024</p>
+                        <p class="text-gray-300 text-sm sm:text-base">Intensive program covering full-stack development, algorithms, and software engineering principles.</p>
+                    </div>
+                    
+                    <div class="bg-black bg-opacity-80 rounded-lg p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold text-red-300 mb-2">Mechanical Engineering</h3>
+                        <p class="text-gray-400 mb-2 text-sm sm:text-base">University Degree • 2018 - 2023</p>
+                        <p class="text-gray-300 text-sm sm:text-base">Bachelor's degree in Mechanical Engineering with focus on applied mathematics and problem-solving.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tools & Technologies -->
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-red-400">Tools & Technologies</h2>
+                
+                <div class="bg-black bg-opacity-80 rounded-lg p-4 sm:p-6">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 text-center">
+                        <div class="bg-gray-800 rounded p-3 sm:p-4">
+                            <i class='bx bxl-git text-2xl sm:text-3xl mb-2 text-orange-400'></i>
+                            <p class="text-sm sm:text-base">Git</p>
+                        </div>
+                        <div class="bg-gray-800 rounded p-3 sm:p-4">
+                            <i class='bx bxl-docker text-2xl sm:text-3xl mb-2 text-blue-400'></i>
+                            <p class="text-sm sm:text-base">Docker</p>
+                        </div>
+                        <div class="bg-gray-800 rounded p-3 sm:p-4">
+                            <i class='bx bxl-visual-studio text-2xl sm:text-3xl mb-2 text-purple-400'></i>
+                            <p class="text-sm sm:text-base">VS Code</p>
+                        </div>
+                        <div class="bg-gray-800 rounded p-3 sm:p-4">
+                            <i class='bx bxl-postgresql text-2xl sm:text-3xl mb-2 text-cyan-400'></i>
+                            <p class="text-sm sm:text-base">PostgreSQL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </body>
 </html>

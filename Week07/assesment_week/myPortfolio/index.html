@@ -13,31 +13,43 @@
 <body class="text-white">
     <section  class="bg-[url('/src/ASSETS/IMG/jackson-sophat-_t-l5FFH8VA-unsplash.jpg')] bg-cover bg-center">
         <header>
-            <nav class="bg-black bg-linear-to-r  from-slate-200 to-slate-600 p-2.5 rounded-md w-full fixed z-40">
+            <nav class="flex justify-between items-center bg-black bg-opacity-80 p-2.5 rounded-md w-full fixed z-40">
                 <div>
-                    <span
-                        class="font-bold text-3xl bg-red-500 px-4 rounded-md bg-linear-to-tr from-red-500 to-red-200 shadow-md">MP</span>
+                    <a href="index.html" class="font-bold text-3xl bg-red-500 px-4 rounded-md bg-linear-to-tr from-red-500 to-red-200 shadow-md">MP</a>
                 </div>
     
-                <ul class="hidden">
-                    <li><a href="">Home <p class="bg-red-500 h-1 w-10"></p></a></li>
-                    <li><a href="">Experience <p class="bg-red-500 h-1 w-10"></p></a></li>
-                    <p class="bg-red-500 h-1 w-10"></p>
-                    <li><a href="">Portfolio <p class="bg-red-500 h-1 w-10"></p></a></li>
-                    <p class="bg-red-500 h-1 w-10"></p>
-                    <li><a href="">About <p class="bg-red-500 h-1 w-10"></p></a></li>
-                    <p class="bg-red-500 h-1 w-10"></p>
-                    <li><a href="">Contact</a></li>
-                    <p class="bg-red-500 h-1 w-10"></p>
+                <!-- Desktop Navigation -->
+                <ul class="hidden lg:flex space-x-6">
+                    <li><a href="#home" class="hover:text-red-400 transition-colors">Home</a></li>
+                    <li><a href="expertise.html" class="hover:text-red-400 transition-colors">Experience</a></li>
+                    <li><a href="#portfolio" class="hover:text-red-400 transition-colors">Portfolio</a></li>
+                    <li><a href="#about" class="hover:text-red-400 transition-colors">About</a></li>
+                    <li><a href="#contact" class="hover:text-red-400 transition-colors">Contact</a></li>
                 </ul>
-    
+                
+                <!-- Mobile menu button -->
+                <input type="checkbox" id="mobile-menu-toggle" class="hidden peer">
+                <label for="mobile-menu-toggle" class="lg:hidden cursor-pointer">
+                    <i class='bx bx-menu text-3xl'></i>
+                </label>
             </nav>
+            
+            <!-- Mobile menu -->
+            <div class="hidden peer-checked:flex lg:hidden bg-black bg-opacity-90 fixed top-16 left-0 right-0 z-30">
+                <ul class="flex flex-col space-y-4 p-4 w-full">
+                    <li><a href="#home" class="hover:text-red-400 transition-colors block py-2">Home</a></li>
+                    <li><a href="expertise.html" class="hover:text-red-400 transition-colors block py-2">Experience</a></li>
+                    <li><a href="#portfolio" class="hover:text-red-400 transition-colors block py-2">Portfolio</a></li>
+                    <li><a href="#about" class="hover:text-red-400 transition-colors block py-2">About</a></li>
+                    <li><a href="#contact" class="hover:text-red-400 transition-colors block py-2">Contact</a></li>
+                </ul>
+            </div>
         </header>
     
-        <main>
-            <div class="py-10 mx-4 rounded-xl font-bold text-xl space-y-2 text-white text-">
-                <p class="text-4xl">Msughter Apera</p>
-                <p class="ml-5 text-2xl">FULL-STACK SOFTWARE ENGINEER</p>
+        <main id="home" class="pt-16">
+            <div class="py-10 mx-4 lg:mx-8 rounded-xl font-bold text-xl space-y-2 text-white">
+                <p class="text-3xl sm:text-4xl lg:text-5xl">Msughter Apera</p>
+                <p class="ml-0 sm:ml-5 text-xl sm:text-2xl">FULL-STACK SOFTWARE ENGINEER</p>
             </div>
     
             <div
@@ -47,33 +59,38 @@
     
             <div class="mt-10 h-1 bg-red-600 mx-4"></div>
     
-            <section>
+            <section id="skills">
                 <div>
-                    <span class="mx-4 text-3xl font-bold">SKILLS</span>
+                    <span class="mx-4 text-2xl sm:text-3xl font-bold">SKILLS</span>
                 </div>
                 <div
                     class="mx-4 bg-[url('/src/ASSETS/IMG/jackson-sophat-_t-l5FFH8VA-unsplash.jpg')] bg-cover rounded-md py-3 px-4">
     
-                    <div class="grid md:grid-cols-2 mx-4 gap-3">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                         <div class="bg-black py-3 px-3 rounded-xl">
                             <span class="font-bold">HTML</span>
-                            <img src="ASSETS/IMG/round-icons-1e4w_Pjq5xc-unsplash.jpg" alt="htmlLogo"
-                                class="w-52 rounded-xl">
+                            <img src="/src/ASSETS/IMG/round-icons-1e4w_Pjq5xc-unsplash.jpg" alt="htmlLogo"
+                                class="w-full max-w-52 rounded-xl mx-auto">
                         </div>
     
                         <div class="bg-black py-3 px-3 rounded-xl">
                             <span class="font-bold">CSS</span>
-                            <img src="ASSETS/IMG/logo-2582747_1920.png" alt="cssLogo" class="w-52 rounded-xl">
+                            <img src="/src/ASSETS/IMG/logo-2582747_1920.png" alt="cssLogo" class="w-full max-w-52 rounded-xl mx-auto">
                         </div>
     
                         <div class="bg-black py-3 px-3 rounded-xl">
                             <span class="font-bold">JavaScript</span>
-                            <img src="ASSETS/IMG/javascript-736400_1920.png" alt="javascript" class="w-52 rounded-xl">
+                            <img src="/src/ASSETS/IMG/javascript-736400_1920.png" alt="javascript" class="w-full max-w-52 rounded-xl mx-auto">
                         </div>
     
-                        <div class="bg-black pt-3 px-3 rounded-xl">
+                        <div class="bg-black py-3 px-3 rounded-xl">
                             <span class="font-bold">React</span>
-                            <img src="ASSETS/IMG/reactjs.png" alt="reactLogo" class="w-52 rounded-xl py-14">
+                            <img src="/src/ASSETS/IMG/reactjs.png" alt="reactLogo" class="w-full max-w-52 rounded-xl py-14 mx-auto">
+                        </div>
+                        
+                        <div class="bg-black py-3 px-3 rounded-xl">
+                            <span class="font-bold">Python</span>
+                            <img src="/src/ASSETS/IMG/rubaitul-azad-ZIPFteu-R8k-unsplash.jpg" alt="pythonLogo" class="w-full max-w-52 rounded-xl mx-auto">
                         </div>
     
                     </div>
@@ -83,13 +100,13 @@
             </section>
     
     
-            <section>
+            <section id="about">
                 <div>
-                    <span class="mx-4 text-3xl font-bold">ABOUT</span>
+                    <span class="mx-4 text-2xl sm:text-3xl font-bold">ABOUT</span>
                 </div>
     
-                <div class="bg-white text-gray-600 mx-4 my-5 rounded-md py-5 px-4 text-xl font-bold">
-                    <p>
+                <div class="bg-white text-gray-600 mx-4 my-5 rounded-md py-5 px-4 text-lg sm:text-xl font-bold">
+                    <p class="text-justify">
                         I am a Full-Stack Software Engineer with a strong foundation in engineering principles and
                         problem-solving,
                         currently focused on building scalable and efficient web applications.
@@ -122,6 +139,80 @@
     
                 <div class="mt-10 h-1 bg-red-600 mx-4"></div>
             </section>
+            <section id="portfolio">
+                <div>
+                    <span class="mx-4 text-2xl sm:text-3xl font-bold">FEATURED PROJECTS</span>
+                </div>
+                
+                <div class="mx-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 py-8">
+                    <div class="bg-black bg-opacity-80 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
+                        <img src="/src/ASSETS/IMG/kobu-agency-ipARHaxETRk-unsplash.jpg" alt="Project 1" class="w-full h-40 sm:h-48 object-cover">
+                        <div class="p-3 sm:p-4">
+                            <h3 class="font-bold text-lg sm:text-xl mb-2">E-Commerce Platform</h3>
+                            <p class="text-gray-300 text-sm sm:text-base mb-3">Full-stack web application with React, Node.js, and PostgreSQL</p>
+                            <div class="flex flex-wrap gap-1 sm:gap-2">
+                                <span class="bg-red-500 px-2 py-1 rounded text-xs">React</span>
+                                <span class="bg-blue-500 px-2 py-1 rounded text-xs">Node.js</span>
+                                <span class="bg-green-500 px-2 py-1 rounded text-xs">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-black bg-opacity-80 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
+                        <img src="/src/ASSETS/IMG/michael-dziedzic-FuA9TJqJVVw-unsplash.jpg" alt="Project 2" class="w-full h-40 sm:h-48 object-cover">
+                        <div class="p-3 sm:p-4">
+                            <h3 class="font-bold text-lg sm:text-xl mb-2">Task Management API</h3>
+                            <p class="text-gray-300 text-sm sm:text-base mb-3">RESTful API built with Python FastAPI and MySQL</p>
+                            <div class="flex flex-wrap gap-1 sm:gap-2">
+                                <span class="bg-yellow-500 px-2 py-1 rounded text-xs">Python</span>
+                                <span class="bg-purple-500 px-2 py-1 rounded text-xs">FastAPI</span>
+                                <span class="bg-blue-500 px-2 py-1 rounded text-xs">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-black bg-opacity-80 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
+                        <img src="/src/ASSETS/IMG/pexels-veeterzy-303383.jpg" alt="Project 3" class="w-full h-40 sm:h-48 object-cover">
+                        <div class="p-3 sm:p-4">
+                            <h3 class="font-bold text-lg sm:text-xl mb-2">Weather Dashboard</h3>
+                            <p class="text-gray-300 text-sm sm:text-base mb-3">Real-time weather application with responsive design</p>
+                            <div class="flex flex-wrap gap-1 sm:gap-2">
+                                <span class="bg-orange-500 px-2 py-1 rounded text-xs">JavaScript</span>
+                                <span class="bg-cyan-500 px-2 py-1 rounded text-xs">Tailwind CSS</span>
+                                <span class="bg-green-500 px-2 py-1 rounded text-xs">API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-10 h-1 bg-red-600 mx-4"></div>
+            </section>
+            
+            <section id="contact">
+                <div>
+                    <span class="mx-4 text-2xl sm:text-3xl font-bold">GET IN TOUCH</span>
+                </div>
+                
+                <div class="mx-4 bg-black bg-opacity-80 rounded-md p-4 sm:p-6 my-5">
+                    <form class="space-y-4" method="get" action="#">
+                        <div>
+                            <label class="block text-sm font-medium mb-2" for="name">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-3 sm:px-4 py-2 rounded bg-gray-800 border border-gray-600 focus:border-red-500 focus:outline-none transition-colors" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2" for="email">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-3 sm:px-4 py-2 rounded bg-gray-800 border border-gray-600 focus:border-red-500 focus:outline-none transition-colors" placeholder="your.email@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2" for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-3 sm:px-4 py-2 rounded bg-gray-800 border border-gray-600 focus:border-red-500 focus:outline-none transition-colors" placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="bg-red-500 hover:bg-red-600 px-6 py-2 rounded font-medium transition-colors w-full sm:w-auto">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </section>
         </main>
     
     </section>
@@ -130,10 +221,10 @@
     <footer>
         <div class="py-4 mt-5">
             <div class="flex justify-center">
-                <img src="ASSETS/IMG/round-icons-nyePM1C_1EU-unsplash.svg" alt="github" class="w-28">
-                <img src="ASSETS/IMG/round-icons-U2Bv5Fdl2W4-unsplash.svg" alt="twitter" class="w-20">
-                <img src="ASSETS/IMG/round-icons-9Ox1REpYD2g-unsplash.svg" alt="facebook" class="w-14">
-                <img src="ASSETS/IMG/round-icons-__CZF72Tiys-unsplash.svg" alt="tele" class="w-10">
+                <img src="/src/ASSETS/IMG/round-icons-nyePM1C_1EU-unsplash.svg" alt="github" class="w-28">
+                <img src="/src/ASSETS/IMG/round-icons-U2Bv5Fdl2W4-unsplash.svg" alt="twitter" class="w-20">
+                <img src="/src/ASSETS/IMG/round-icons-9Ox1REpYD2g-unsplash.svg" alt="facebook" class="w-14">
+                <img src="/src/ASSETS/IMG/round-icons-__CZF72Tiys-unsplash.svg" alt="tele" class="w-10">
                 
             </div>
 
@@ -143,6 +234,12 @@
             </div>
         </div>
     </footer>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
     
 </body>
 </html>
