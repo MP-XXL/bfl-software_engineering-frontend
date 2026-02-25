@@ -267,11 +267,41 @@
   .h-40 {
     height: calc(var(--spacing) * 40);
   }
+  .h-44 {
+    height: calc(var(--spacing) * 44);
+  }
   .h-48 {
     height: calc(var(--spacing) * 48);
   }
+  .h-67 {
+    height: calc(var(--spacing) * 67);
+  }
+  .h-67\.5 {
+    height: calc(var(--spacing) * 67.5);
+  }
   .h-96 {
     height: calc(var(--spacing) * 96);
+  }
+  .h-400 {
+    height: calc(var(--spacing) * 400);
+  }
+  .h-\[00px\] {
+    height: 00px;
+  }
+  .h-\[20px\] {
+    height: 20px;
+  }
+  .h-\[200px\] {
+    height: 200px;
+  }
+  .h-\[250px\] {
+    height: 250px;
+  }
+  .h-\[270px\] {
+    height: 270px;
+  }
+  .h-\[300px\] {
+    height: 300px;
   }
   .h-fit {
     height: fit-content;
@@ -308,6 +338,9 @@
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -366,14 +399,23 @@
   .w-180 {
     width: calc(var(--spacing) * 180);
   }
+  .w-190 {
+    width: calc(var(--spacing) * 190);
+  }
   .w-200 {
     width: calc(var(--spacing) * 200);
+  }
+  .w-250 {
+    width: calc(var(--spacing) * 250);
   }
   .w-500 {
     width: calc(var(--spacing) * 500);
   }
   .w-\[55\] {
     width: 55;
+  }
+  .w-\[300px\] {
+    width: 300px;
   }
   .w-\[500px\] {
     width: 500px;
@@ -456,6 +498,9 @@
   }
   .resize {
     resize: both;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -755,6 +800,9 @@
   .bg-\[\#000000\] {
     background-color: #000000;
   }
+  .bg-\[\#1\] {
+    background-color: #1;
+  }
   .bg-\[\#2E2E2E\] {
     background-color: #2E2E2E;
   }
@@ -818,8 +866,14 @@
   .bg-\[\#11111\] {
     background-color: #11111;
   }
+  .bg-\[\#20202\] {
+    background-color: #20202;
+  }
   .bg-\[\#111111\] {
     background-color: #111111;
+  }
+  .bg-\[\#141414\] {
+    background-color: #141414;
   }
   .bg-\[\#202020\] {
     background-color: #202020;
@@ -853,6 +907,9 @@
   }
   .bg-\[\#\] {
     background-color: #;
+  }
+  .bg-\[1\] {
+    background-color: 1;
   }
   .bg-\[B0\] {
     background-color: B0;
@@ -952,8 +1009,17 @@
   .text-\[\#00FF5\] {
     color: #00FF5;
   }
+  .text-\[\#00FFA3\] {
+    color: #00FFA3;
+  }
   .text-\[\#00FFF5\] {
     color: #00FFF5;
+  }
+  .text-\[\#00FF\] {
+    color: #00FF;
+  }
+  .text-\[\#00\] {
+    color: #00;
   }
   .text-\[\#202020\] {
     color: #202020;
@@ -970,8 +1036,20 @@
   .text-\[\#B\] {
     color: #B;
   }
+  .text-\[\#FF05C8\] {
+    color: #FF05C8;
+  }
+  .text-\[\#FF1010\] {
+    color: #FF1010;
+  }
+  .text-\[\#FFE6\] {
+    color: #FFE6;
+  }
   .text-\[\#FFE605\] {
     color: #FFE605;
+  }
+  .text-\[\#FFE606\] {
+    color: #FFE606;
   }
   .text-\[\#FFE\] {
     color: #FFE;
