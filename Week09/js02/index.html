@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python in Browser</title>
+</head>
+
+<body>
+
+<h2>Run Python from external file</h2>
+
+<input id="nameInput" placeholder="Enter your name">
+<button onclick="runPython()">Run</button>
+
+<p id="output"></p>
+
+<script type="module">
+
+import { loadPyodide } from "https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.mjs";
+
+let pyodide = await loadPyodide();
+
+
+// Load external Python file
+const pythonCode = await fetch("main.py").then(r => r.text());
+
+pyodide.runPython(pythonCode);
+
+
+window.runPython = () => {
+
+    const name = document.getElementById("nameInput").value;
+
+    const result = pyodide.runPython(`
+output_name("${name}")
+`);
+
+    document.getElementById("output").textContent = result;
+
+}
+
+</script>
+
+</body>
+</html>
