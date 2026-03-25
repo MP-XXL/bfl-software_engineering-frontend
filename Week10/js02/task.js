@@ -149,8 +149,8 @@ let personObj = {
 
 // 10. What is the output for each data logged:
 
-let x = null
-let y
+let x = null;
+let y;
 
 console.log(x) //-> null
 console.log(y) //->  undefined

@@ -35,3 +35,6 @@ console.log(person)
 let numero = 2n;
 const result = numero + 2n;
 console.log(result)
+
+let sen = "1234";
+console.log(sen.slice(0, 7))
