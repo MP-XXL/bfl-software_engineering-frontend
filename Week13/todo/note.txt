@@ -1,0 +1,45 @@
+DOM manipulation
+
+1. getElementById => used to select a particular element by its ID
+2. getElementsByClassName => used to select an element by its class name.Will return all the elements in an array. Does not allow forEach
+3. querySelector => used to select elements by their selectors. The selector is passed as an argument
+4. querySelectorAll => Used to select all the elements that match a particular selector passed as an argument.Allows forEach
+5. getElementByTagName => Used to select elements by tag name . Will return an array as well.
+6. createElement =>
+7. getAttribute => Used to get the attributes of a particular element
+8. setAttribute => Used to  set the attribute of a particular element. If attribute does not exist, it will create and set the value
+9. InnerHTML => Helps to select and get or set the content of a particular element. InnerHTML does not set Node content(meaning some event listeners wont work)
+10.InnerText => Returns the text data in a particular selected element
+
+ADVANCE CSS SELECTORS
+
+1. textContent => Same as InnerText but does not respect hidden or none displays
+
+2. style.cssText = "display: none; border-color: #FF0000" => to change styling of elements
+
+3. Selecting an element that is dynamic or computed:
+document.querySelector("div[class ^ = "task"]") ## you can use "*" wildcard to search for a pattern that begins anywhere
+and you can use "$" sign to select elements that ends with a particular pattern
+[class ^ = "task"] => this passed alone as the argument will return all types of elements  with the match 
+and not just a single type
+
+
+
+
+#You can not use forEach on HTML collections but you can use it on a NodeList
+#You can select an element in the console and copy its path
+
+EVENT LISTENERS
+
+addEventListener => takes two arguments, the type of event(hover, click) and the callback function(e, element)
+
+#disable the button to prevent duplicate transaction.(provide feedback e.g "submitting")
+
+1. click event
+2. hover
+3. focus
+5. input
+6. mouseup & mousedown
+
+
+###Web Audio API

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doo</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-gray-100">
+    <section class="my-3.5">
+        <nav class="bg-amber-200 py-3.5 px-2 mx-2.5 rounded-md">
+            <span class="bg-red-600 text-white font-bold p-2.5 rounded-md">Doo.io</span>
+        </nav>
+    </section>
+    <section class="flex flex-col items-center justify-center">
+        <h1 class="text-4xl font-bold">Add Task</h1>
+        <form action="" id="myForm" class="bg-amber-200 py-10 px-5 rounded-sm">
+            <input type="text" placeholder="Enter your todo here..." class="input_area border-2 border-white p-1.5 rounded-md outline-amber-500">
+            <button id="add_btn" class="bg-amber-500 p-1.5 rounded-md text-white font-bold transition hover:bg-amber-600 active:scale-90">Add +</button>
+        </form>
+    </section>
+
+    <section class="flex flex-col items-center my-5 p-2.5 bg-amber-200 mx-5 rounded-md">
+        <h1 class="text-4xl font-bold" id="task_listHeader" customAtt="Yello">Task List</h1>
+        <ul id="task_list">
+
+
+        </ul>
+    </section>
+
+    <script>
+        /**
+         * 1. Listen for click event on #add_btn
+         * 2. get value of input .input_area/
+         * 3. Add the value of the task list #task_list**/
+        // get element
+         let form = document.querySelector("#myForm")
+
+        //  listen for event
+        form.addEventListener("click", (e) => {
+            e.preventDefault()
+            let todoValue = document.querySelector(".input_area").value
+
+            // if(typeof(todoValue === "number")) {
+            //     alert("Value must be string")
+            //     return
+            // }
+
+            let todoList = document.querySelector("#task_list")
+
+            todoList.innerHTML += `<li class="tasks-text"> ${todoValue}</li>`
+
+            console.log(todoValue)
+
+        })
+
+
+    </script>
+    
+</body>
+</html>

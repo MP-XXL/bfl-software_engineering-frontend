@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+
+    <main class="bg-black">
+        <section id="btn-section" class="flex flex-col items-center justify-center h-screen">
+            <audio id="faaah" src="src/assets/sounds/faaa.mp3"></audio>
+            <button id="btn" class="transition active:scale-90" data-playing="false" role="switch" aria-checked="false">
+                <div class="bg-[#421111] w-70 h-70 flex justify-center items-center rounded-full">
+                    <div class="bg-[#590f0f] w-60 h-60 flex justify-center items-center rounded-full">
+                        <div class="bg-[#9e0b0b] w-50 h-50 flex justify-center items-center rounded-full">
+                            <p class="text-white font-press">Don't press me!</p>
+                        </div>
+                    </div>
+                </div>
+            </button>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
