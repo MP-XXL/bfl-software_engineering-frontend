@@ -36,7 +36,7 @@ let mapTest = numbers.map((number) => {
     }
     return 0
 })
-console.log(mapTest)
+console.log("Map result", mapTest)
 
 // .reduce(acc, value, intitial value)
 

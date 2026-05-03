@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>knotes</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-[#E1CA96] text-white">
+    <section>
+        <nav class="bg-[#ACA885] flex justify-between items-center p-2.5 m-2.5 rounded-md">
+            <div>
+                <span class="font-kause font-bold text-3xl">Knotes</span>
+            </div>
+
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="2 2 20 20" >
+                    <path
+                        d="M4.5 11h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5h-5C3.67 3 3 3.67 3 4.5v5c0 .83.67 1.5 1.5 1.5M5 5h4v4H5zm14.5-2h-5c-.83 0-1.5.67-1.5 1.5v5c0 .83.67 1.5 1.5 1.5h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5M19 9h-4V5h4zM4.5 21h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5h-5c-.83 0-1.5.67-1.5 1.5v5c0 .83.67 1.5 1.5 1.5m.5-6h4v4H5zm14.5-2h-5c-.83 0-1.5.67-1.5 1.5v5c0 .83.67 1.5 1.5 1.5h5c.83 0 1.5-.67 1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5m-.5 6h-4v-4h4z">
+                    </path>
+                </svg>
+            </div>
+        </nav>
+    </section>
+
+    <section>
+        <div id="hero" class="flex flex-col items-center bg-black py-16">
+            <p class="font-dynaPuff font-bold text-4xl">Ideas to life...</p>
+            <p class="font-dynaPuff font-bold text-2">everyone <span class="font-kause font-bold text-3xl">counts!</span></p>
+        </div>
+    </section>
+
+    <section class="flex justify-center items-center my-5">
+        <form action="">
+            <input type="text" placeholder="Enter your note" class="noteInput border-2 text-[#918B76] border-[#918B76] bg-white  p-1.5 rounded-md outline-amber-500">
+            <button id="addNoteBtn" class="bg-[#918B76] p-2.5 rounded-md transition active:scale-90 font-dynaPuff font-bold">Add note</button>
+        </form>
+    </section>
+
+    <section class="bg-[#ACA885] m-2.5 rounded-md p-2.5">
+        <h1 class="font-dynaPuff font-bold text-4xl">Saved notes</h1>
+        <div id="savedNotes" class="flex flex-col gap-5 md:grid grid-cols-2 lg:grid-cols-3">
+
+        </div>
+    </section>
+    
+    <footer class="bg-[#ACA885] py-10 px-2.5 mt-10">
+        <div>
+            <span class="font-kause font-bold text-3xl">Knotes</span>
+        </div>
+
+        <p class="font-bold">2026</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
