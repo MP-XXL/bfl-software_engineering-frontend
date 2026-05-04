@@ -1,4 +1,4 @@
-let textOutput= document.querySelectorAll(".live-output");
+let textOutput = document.querySelector(".live-output");
 let liveText = document.querySelector("#live-input");
 
 liveText.addEventListener("input", function(e) {
