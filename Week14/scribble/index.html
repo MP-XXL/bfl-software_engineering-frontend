@@ -12,7 +12,7 @@
     <section class="">
         <nav class="bg-[#FAEDCD] px-2.5 py-5 my-5 mx-2.5 rounded-md flex items-center justify-between">
             <div>
-                <span class="font-kause font-bold text-2xl bg-[#D4A373] p-2.5 rounded-2xl text-white">Scrible</span>
+                <span class="font-fkause font-bold text-2xl bg-[#D4A373] p-2.5 rounded-2xl text-white">Scrible</span>
             </div>
         
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" viewBox="0 0 24 24">
@@ -24,8 +24,8 @@
     <main>
         <section id="hero" class="">
 
-            <div class="flex flex-col items-center font-lovers">
-                <p class="text-5xl font-bold">Welcome to <span class="font-kause">srcible!</span></p>
+            <div class="flex flex-col items-center font-flovers">
+                <p class="text-5xl font-bold">Welcome to <span class="font-fkause">srcible!</span></p>
                 <p class="text-3xl font-bold">super font formatter</p>
             </div>
         </section>
@@ -41,15 +41,15 @@
                 <div class="grid--cards bg-[#FEFAE0] rounded-md">
                     <div id="texts" class="p-1.5">
                         <span class="font-bold">Bold:</span>
-                        <span class="live-output font-bold"></span>
+                        <span id="bold" class="live-output font-bold"></span>
                     </div>
                     
                     <div class="flex justify-between items-center p-1.5">
                         <span>Fonts</span>
-                        <div class="flex gap-2.5 text-white">
-                            <button class="bg-[#D4A373] p-1 w-16 rounded-md">Hello</button>
-                            <button class="bg-[#D4A373] p-1 w-16 rounded-md">Hello</button>
-                            <button class="bg-[#D4A373] p-1 w-16 rounded-md">Hello</button>
+                        <div class="flex gap-2.5 text-white font-bold text-xl">
+                            <button class="bg-[#D4A373] p-1 w-16 rounded-md font-fdynaPuff" onclick="changeFont('bold', 'font-fdynaPuff')">Hello</button>
+                            <button class="bg-[#D4A373] p-1 w-16 rounded-md font-fc-girls" onclick="changeFont('bold', 'font-fc-girls')">Hello</button>
+                            <button class="bg-[#D4A373] p-1 w-16 rounded-md font-flovers" onclick="changeFont('bold', 'font-flovers')">Hello</button>
                         </div>
                         
                     </div>
@@ -63,10 +63,10 @@
                     
                     <div class="flex justify-between items-center p-1.5">
                         <span>Fonts</span>
-                        <div class="flex gap-2.5 text-white">
-                            <button class="bg-[#D4A373] p-1 w-16 rounded-md">Hello</button>
-                            <button class="bg-[#D4A373] p-1 w-16 rounded-md">Hello</button>
-                            <button class="bg-[#D4A373] p-1 w-16 rounded-md">Hello</button>
+                        <div class="flex gap-2.5 text-white font-bold text-xl">
+                            <button class="bg-[#D4A373] p-1 w-16 rounded-md font-fdynaPuff" onclick="changeFont('italic', 'font-fdynaPuff')">Hello</button>
+                            <button class="bg-[#D4A373] p-1 w-16 rounded-md font-fc-girls" onclick="changeFont('italic', 'font-fc-girls')">Hello</button>
+                            <button class="bg-[#D4A373] p-1 w-16 rounded-md font-flovers" onclick="changeFont('italic', 'font-flovers')">Hello</button>
                         </div>
                         
                     </div>
@@ -77,7 +77,7 @@
 
     <footer class="bg-black py-7 px-5 mt-10">
         <div>
-            <span class="font-kause font-bold text-2xl bg-[#D4A373] p-2.5 rounded-2xl text-white">Scrible</span>
+            <span class="font-fkause font-bold text-2xl bg-[#D4A373] p-2.5 rounded-2xl text-white">Scrible</span>
         </div>
         <div class="flex justify-center gap-2.5 mt-10">
             <span class="text-white">2026</span>

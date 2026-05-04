@@ -4,9 +4,9 @@
 @import "tailwindcss";
 
 @theme {
-    --font-dynaPuff: "DynaPuff";
-    --font-kause: "Kaushan Script";
-    --font-c-girls: "Crafty Girls";
-    --font-jim: "Jim Nightshade";
-    --font-lovers: "Lovers Quarrel";
+    --font-fdynaPuff: "DynaPuff";
+    --font-fkause: "Kaushan Script";
+    --font-fc-girls: "Crafty Girls";
+    --font-fjim: "Jim Nightshade";
+    --font-flovers: "Lovers Quarrel";
 }
