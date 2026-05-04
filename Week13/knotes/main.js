@@ -46,7 +46,7 @@ function loadTodoData() {
             let notesDiv = document.createElement("div");
             notesDiv.innerHTML = `
             <div id="noteHolder" class="flex flex-col gap-4">
-                <div id="${note.noteId}" class="bg-[#918B76] w-full h-32 rounded-md border-2 border-white">${note.note}</div>
+                <div id="${note.noteId}" class="bg-[#918B76] w-full h-32 rounded-md border-2 border-white p-2.5">${note.note}</div>
 
                 <div class="flex items-center gap-2.5">
                     <h1>font</h1>
