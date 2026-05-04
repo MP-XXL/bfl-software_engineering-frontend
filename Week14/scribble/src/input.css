@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=DynaPuff:wght@400..700&family=Jim+Nightshade&family=Kaushan+Script&family=Lovers+Quarrel&display=swap');
+
+
+@import "tailwindcss";
+
+@theme {
+    --font-dynaPuff: "DynaPuff";
+    --font-kause: "Kaushan Script";
+    --font-c-girls: "Crafty Girls";
+    --font-jim: "Jim Nightshade";
+    --font-lovers: "Lovers Quarrel";
+}
