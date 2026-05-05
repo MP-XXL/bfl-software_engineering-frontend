@@ -5,6 +5,11 @@ let addBtn = document.querySelector("#addNoteBtn");
 addBtn.addEventListener("click", (e) => {
     e.preventDefault();
     let noteValue = document.querySelector(".noteInput").value;
+    if(noteValue == ""){
+        let errorDiv = document.querySelector("#errorDiv")
+        return errorDiv.innerHTML = `<p>Can not accept empty input!</p>`
+    }
+    document.querySelector("#errorDiv").innerHTML = "";
     let noteId = Date.now();
     let timeStamp = new Date(noteId).toLocaleDateString();
     let notes = JSON.parse(localStorage.getItem("notes"));
@@ -52,7 +57,7 @@ function loadTodoData() {
                     <h1>font</h1>
                     <button class="bg-[#918B76] p-1 rounded-md transition active:scale-90 font-jim font-bold" onclick="changeFont('${note.noteId}', 'font-jim')">Hello</button>
                     <button class="bg-[#918B76] p-1 rounded-md transition active:scale-90 font-c-girls font-bold" onclick="changeFont('${note.noteId}', 'font-c-girls')">Hello</button>
-                    <button class="bg-[#918B76] p-1 rounded-md transition active:scale-90 font-dynaPuff font-bold" onclick="changeFont('${note.noteID}', 'font-dynaPuff')">Hello</button>
+                    <button class="bg-[#918B76] p-1 rounded-md transition active:scale-90 font-dynaPuff font-bold" onclick="changeFont('${note.noteId}', 'font-dynaPuff')">Hello</button>
                     <div class="flex items-center gap-1.5">
                         <span class="text-sm font-medium">${note.dateAdded}</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="2 2 20 20"

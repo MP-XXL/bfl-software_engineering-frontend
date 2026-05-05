@@ -11,6 +11,11 @@ adBtn.addEventListener("click", (e) => {
     let todos = JSON.parse(localStorage.getItem("todos"));
     e.preventDefault();
     let todoValue = document.querySelector(".input_area").value;
+    if(todoValue == ""){
+        let errorDiv = document.querySelector("#errorDiv")
+        return errorDiv.innerHTML = `<p>Can not accept empty input!</p>`
+    }
+    document.querySelector("#errorDiv").innerHTML = "";
     let taskId = Date.now();
     let timeStamp = new Date(taskId).toLocaleDateString();
     if (todos == null) {
