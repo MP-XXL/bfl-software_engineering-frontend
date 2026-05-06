@@ -7,7 +7,6 @@ liveText.addEventListener("input", function(e) {
     })
 })
 
-
 function changeFont(noteId, font) {
     let changeFontBtn = document.getElementById(noteId);
     let oldAttr = changeFontBtn.getAttribute("class");
@@ -24,9 +23,6 @@ function changeFont(noteId, font) {
         oldAttr.push(font)
         let styling = String(oldAttr);
         styling = styling.replaceAll(",", " ")
-        changeFontBtn.setAttribute("class", styling)
-        
+        changeFontBtn.setAttribute("class", styling)    
     }
-
-   
 }
