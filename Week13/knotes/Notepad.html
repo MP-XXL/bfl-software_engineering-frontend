@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Note</title>
+</head>
+<body>
+	<h1>Note</h1>
+	<!--
+	- Title (input), Content (textarea) -> Button
+	- Notes -> [{title, content},...]
+	-->
+	<form>
+		<div>
+			<input type="text" id="title" placeholder="Title">
+		</div>
+		<div>
+			<textarea id="content" placeholder="Content"></textarea>
+		</div>
+		<div>
+			<button id="submit_note" data-id="0">Add</button>
+		</div>
+	</form>
+
+	<div>
+		<ol id="notes">
+			
+		</ol>
+
+		<div>
+			<button type="button" id="clear">Clear</button>
+		</div>
+	</div>
+
+	<script>
+		const btn = document.getElementById("submit_note")
+
+		// function to render notes from localStorage
+		function renderNotes() {
+			let savedNotes = JSON.parse(localStorage.getItem("notepad")) || []
+
+			let notes = document.getElementById("notes")
+
+			notes.innerHTML = ''
+			
+			if(savedNotes && savedNotes.length > 0) {
+
+				savedNotes.forEach((note) => {
+					notes.innerHTML += `<li><span>
+						${note.title}</span>
+						<button class="update-btn another-class" data-id="${note.id}">Update</button>
+						<button class="delete-btn another-class" data-id="${note.id}">Delete</button>
+					</li>`
+				})
+			}
+		}
+
+		// action for saving note
+		btn.addEventListener("click", (e) => {
+			e.preventDefault()
+
+			let savedNotes = JSON.parse(localStorage.getItem("notepad")) || []
+
+			let title = document.getElementById("title")
+			let content = document.getElementById("content")
+
+			if(e.target.dataset.id == 0) {
+				savedNotes.push({
+					id: savedNotes[savedNotes.length-1].id+1,
+					title: title.value,
+					content: content.value
+				})
+			}else{
+				savedNotes = savedNotes.map((note) => {
+					if (note.id == e.target.dataset.id) {
+						return {
+							...note,
+							title: title.value,
+							content: content.value
+						}
+					}else{
+						return note
+					}
+				})
+			}
+
+			localStorage.setItem("notepad", JSON.stringify(savedNotes))
+
+			renderNotes()
+
+			console.log(title.value, content.value)
+		})
+
+		const notesContainer = document.getElementById("notes")
+
+		notesContainer.addEventListener("click", (e) => {
+			if(e.target.classList.contains("update-btn")) {
+				let savedNotes = JSON.parse(localStorage.getItem("notepad")) || []
+
+				let selectedNote = savedNotes.find(note => note.id == e.target.dataset.id)
+
+				document.getElementById("title").value = selectedNote.title
+				document.getElementById("content").value = selectedNote.content
+				document.getElementById("submit_note").setAttribute("data-id", selectedNote.id)
+				document.getElementById("submit_note").innerText = "Update"
+			}
+
+			if(e.target.classList.contains("delete-btn")) {
+				let savedNotes = JSON.parse(localStorage.getItem("notepad")) || []
+
+				let selectedNote = savedNotes.filter(note => note.id != e.target.dataset.id)
+
+				localStorage.setItem("notepad", JSON.stringify(selectedNote))
+
+				renderNotes()
+			}
+		})
+
+		document.getElementById('clear').addEventListener("click", () => {
+			localStorage.clear()
+
+			renderNotes()
+		})
+
+		renderNotes()
+	</script>
+</body>
+</html>

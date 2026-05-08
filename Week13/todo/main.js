@@ -36,7 +36,6 @@ adBtn.addEventListener("click", (e) => {
 
 let checkTask = (taskId) => {
     // why not accept custom ID like taskID333-445 ...........===========================>>>>>>>>>>>>>>>>>
-    // check bug anytime I add new task
     let checkBtn = document.getElementById(taskId);
     checkBtn.previousElementSibling.classList.toggle("line-through");
 };

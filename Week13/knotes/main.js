@@ -97,6 +97,9 @@ function changeFont(noteId, font) {
         let styling = String(oldAttr);
         styling = styling.replaceAll(",", " ")
         changeFontBtn.setAttribute("class", styling)
+        // get localstorage item
+        // update the font of that part. note
+        // update the localstorage item
     }else {
         oldAttr = Array(oldAttr)
         oldAttr.push(font)
