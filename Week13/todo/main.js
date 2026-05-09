@@ -61,8 +61,8 @@ function loadTodoData() {
             let taskDiv = document.createElement("div");
             taskDiv.innerHTML = `
                 <ul class="todo flex justify-between items-start p-2.5 rounded-md bg-black border-2 border-blue-300">
-                    <div class="flex flex-col items-start gap-5">
-                    <li>${todo.task}</li>
+                    <div class="flex flex-col items-start gap-5 max-w-full overflow-hidden">
+                    <li class="wrap-break-word whitespace-normal">${todo.task}</li>
                     <input type="checkbox" id="${todo.taskId}" onclick="checkTask('${todo.taskId}')">
                     </div>
                     <div class="flex items-center gap-5">

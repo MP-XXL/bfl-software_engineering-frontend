@@ -21,7 +21,7 @@ loginBtn.addEventListener("click", () => {
         return
     }
 
-    let userFound = users.find((user) => user.password == password.value.toLowerCase())
+    let userFound = users.find((user) => (user.password == password.value.toLowerCase()) && user.email == email.value)
     if(userFound == undefined) {
         alert("Password mismatch!")
         return
@@ -29,10 +29,15 @@ loginBtn.addEventListener("click", () => {
         alert(`Welcome ${userFound.username}`)
     }
 
-    console.log(userFound)
-
     localStorage.setItem("currentUser", JSON.stringify(userFound))
 
     
     window.location.assign("/components/mainChat.html")
+})
+
+
+let signUpLink = document.querySelector("#signUpLink");
+signUpLink.addEventListener("click", (e) => {
+    e.preventDefault()
+    window.location.assign("/index.html")
 })

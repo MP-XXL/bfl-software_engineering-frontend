@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/src/output.css">
 </head>
 <body class="bg-[#002642] text-white">
-    <section class="flex justify-between items-center mx-5">
+    <section class="flex justify-between items-center bg-[#002642] p-2.5 fixed top-0 z-40 w-full md:hidden">
         <div>
             <span id="time"></span>
         </div>
@@ -25,27 +25,22 @@
         </div>
     </section>
     <section>
-        <nav class="bg-[#840032] p-2.5 my-5 fixed z-50 w-full">
+        <nav class="bg-[#840032] flex justify-between items-center p-2.5 my-5 fixed top-5 z-50 w-full opacity-95 backdrop-blur-md md:top-1.5 md:my-0">
             <div>
-                <span>DevTools</span>
-            </div>
-        </nav>
-    </section>
-    <main class="mt-16 flex flex-col gap-5">
-        <div id="chatBox" class="px-5 flex flex-col gap-1.5">
-            <div id="others" class="bg-[#840032] p-2.5 rounded-md max-w-full overflow-hidden">
-                <p id="sender" class="bg-black flex justify-center items-center w-7 h-7 border-2 border-gray-700 rounded-full text-sm"></p>
-                <p id="senderText" class="wrap-break-word whitespace-normal"></p>
+                <span class="font-quant font-bold text-2xl">DevTools</span>
             </div>
 
-            <div id="others" class="bg-[#E59500] p-2.5 rounded-md max-w-full overflow-hidden self-end ">
-                <p id="currentUserIcon" class="bg-black flex justify-center items-center w-7 h-7 border-2 border-gray-700 rounded-full text-sm"></p>
-                <p id="currentUserText" class="wrap-break-word whitespace-normal"></p>
-            </div>
+            <a href="">
+                <button type="button" id="logoutBtn" class="bg-[#AA0041] p-1.5 rounded-md">Logout</button>
+            </a>
+        </nav>
+    </section>
+    <main class="mt-20 flex flex-col gap-5">
+        <div id="chatBox" class="px-5 flex flex-col gap-2 mb-14">
 
         </div>
 
-        <form action="" class="px-5 absolute bottom-2.5 w-full">
+        <form action="" class="px-5 fixed bottom-2.5 w-full md:fixed md:bottom-1.5 opacity-80 backdrop-blur-md">
             <div class="flex justify-center items-center gap-2.5 max-w-full overflow-hidden">
                 <input type="text" id="newMessage" class="bg-gray-200 text-black p-2 rounded-md wrap-break-word whitespace-normal w-full" placeholder="Message">
                 <button type="button" id="sendButton" disabled>

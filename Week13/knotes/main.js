@@ -50,8 +50,8 @@ function loadTodoData() {
         notes.forEach((note) => {
             let notesDiv = document.createElement("div");
             notesDiv.innerHTML = `
-            <div id="noteHolder" class="flex flex-col gap-4">
-                <div id="${note.noteId}" class="bg-[#918B76] w-full h-32 rounded-md border-2 border-white p-2.5">${note.note}</div>
+            <div id="noteHolder" class="flex flex-col gap-4 max-w-full overflow-hidden">
+                <div id="${note.noteId}" class="bg-[#918B76] w-full h-32 rounded-md border-2 border-white p-2.5 wrap-break-word whitespace-normal">${note.note}</div>
 
                 <div class="flex items-center gap-2.5">
                     <h1>font</h1>
