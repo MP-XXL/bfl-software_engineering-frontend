@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quikChat</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-[#002642] text-white">
+    <section class="flex justify-between items-center mx-5">
+        <div>
+            <span id="time"></span>
+        </div>
+
+        <div class="flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="2 2 20 20">
+                <path d="M3 15h2v5H3zm4-3h2v8H7zm4-3h2v11h-2zm4-3h2v14h-2z"></path>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="2 2 20 20">
+                <path d="M10 19c0 1.1.89 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2m7.66-3.61c-1.51-1.51-3.52-2.34-5.66-2.34s-4.15.83-5.66 2.34l1.41 1.41c1.13-1.13 2.64-1.76 4.24-1.76s3.11.62 4.24 1.76l1.41-1.41Z"></path>
+                <path d="M20.49 12.57C18.22 10.3 15.21 9.05 12 9.05s-6.22 1.25-8.49 3.52l1.42 1.41c1.89-1.89 4.4-2.93 7.07-2.93s5.18 1.04 7.07 2.93z"></path>
+                <path d="M.69 9.69 2.1 11.1C4.74 8.46 8.26 7 12 7s7.25 1.46 9.9 4.1l1.41-1.41C20.29 6.67 16.27 5 12 5S3.71 6.66.69 9.69"></path>
+            </svg>
+        </div>
+    </section>
+    <section>
+        <nav class="bg-[#840032] p-2.5 my-5 fixed z-50 w-full">
+            <div>
+                <span>DevTools</span>
+            </div>
+        </nav>
+    </section>
+    <main class="mt-16 flex flex-col gap-5">
+        <div id="chatBox" class="px-5 flex flex-col gap-1.5">
+            <div id="others" class="bg-[#840032] p-2.5 rounded-md max-w-full overflow-hidden">
+                <p id="sender" class="bg-black flex justify-center items-center w-7 h-7 border-2 border-gray-700 rounded-full text-sm"></p>
+                <p id="senderText" class="wrap-break-word whitespace-normal"></p>
+            </div>
+
+            <div id="others" class="bg-[#E59500] p-2.5 rounded-md max-w-full overflow-hidden self-end ">
+                <p id="currentUserIcon" class="bg-black flex justify-center items-center w-7 h-7 border-2 border-gray-700 rounded-full text-sm"></p>
+                <p id="currentUserText" class="wrap-break-word whitespace-normal"></p>
+            </div>
+
+        </div>
+
+        <form action="" class="px-5 absolute bottom-2.5 w-full">
+            <div class="flex justify-center items-center gap-2.5 max-w-full overflow-hidden">
+                <input type="text" id="newMessage" class="bg-gray-200 text-black p-2 rounded-md wrap-break-word whitespace-normal w-full" placeholder="Message">
+                <button type="button" id="sendButton" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="2 2 20 20">
+                        <path d="m21.45 11.11-18-9c-.31-.15-.68-.14-.97.04s-.47.5-.47.85v18a1 1 0 0 0 1 1c.15 0 .31-.04.45-.11l18-9c.34-.17.55-.52.55-.89s-.21-.73-.55-.89ZM4 4.62 16.76 11H4zM4 13h12.76L4 19.38z"></path>
+                    </svg>
+                </button>
+            </div>
+        </form>
+  
+    </main>
+
+    <script src="/js/mainChat.js"></script>
+</body>
+</html>
