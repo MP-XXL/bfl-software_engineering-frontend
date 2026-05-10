@@ -1,10 +1,10 @@
-function loadTime() {
-    let currentTime = document.querySelector("#time");
-    let time = Date.now();
-    currentTime.textContent = (timeStamp = new Date(time).toLocaleTimeString())
-}
+// function loadTime() {
+//     let currentTime = document.querySelector("#time");
+//     let time = Date.now();
+//     currentTime.textContent = (timeStamp = new Date(time).toLocaleTimeString())
+// }
 
-loadTime()
+// loadTime()
 
 let logout = document.querySelector("#logoutBtn");
 logout.addEventListener("click", (e) => {

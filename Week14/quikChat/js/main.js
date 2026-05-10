@@ -28,9 +28,9 @@ signUpBtn.addEventListener("click", (e) => {
     }
 
     users.push({
-        email: email.value.toLowerCase(),
-        username: username.value.toLowerCase(),
-        password: password.value.toLowerCase()
+        email: email.value.toLowerCase().trim(),
+        username: username.value.toLowerCase().trim(),
+        password: password.value.toLowerCase().trim()
     })
 
     localStorage.setItem("users", JSON.stringify(users))
