@@ -6,9 +6,21 @@
 
 // loadTime()
 
+function currentUserCheck() {
+    let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    if (currentUser == undefined) {
+        window.location.assign("/components/login.html")
+    }
+}
+
+currentUserCheck()
+
+
+
 let logout = document.querySelector("#logoutBtn");
 logout.addEventListener("click", (e) => {
     e.preventDefault()
+    localStorage.removeItem("currentUser")
     window.location.assign("/components/login.html")
 })
 
