@@ -72,7 +72,7 @@ sendBtn.addEventListener("click", (e) => {
 
     let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
-    if(e.target.value == "") {
+    if(newMessage.value == "") {
         sendBtn.setAttribute("disabled", true)
         return
     }
