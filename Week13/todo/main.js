@@ -8,66 +8,86 @@ let todoList = document.querySelector("#task_list");
 let adBtn = document.querySelector("#add_btn");
 //  listen for event
 adBtn.addEventListener("click", (e) => {
-    let todos = JSON.parse(localStorage.getItem("todos"));
-    e.preventDefault();
-    let todoValue = document.querySelector(".input_area").value;
-    if(todoValue == ""){
-        let errorDiv = document.querySelector("#errorDiv")
-        return errorDiv.innerHTML = `<p>Can not accept empty input!</p>`
-    }
-    document.querySelector("#errorDiv").innerHTML = "";
-    let taskId = Date.now();
-    let timeStamp = new Date(taskId).toLocaleDateString();
-    if (todos == null) {
-        localStorage.setItem(
-            "todos",
-            JSON.stringify([
-                { task: todoValue, taskId: taskId, dateAdded: timeStamp },
-            ]),
-        );
-    } else {
-        todos.push({ task: todoValue, taskId: taskId, dateAdded: timeStamp });
-        localStorage.setItem("todos", JSON.stringify(todos));
-    }
+  let todos = JSON.parse(localStorage.getItem("todos"));
+  e.preventDefault();
+  let todoValue = document.querySelector(".input_area").value;
+  if (todoValue == "") {
+    let errorDiv = document.querySelector("#errorDiv");
+    return (errorDiv.innerHTML = `<p>Can not accept empty input!</p>`);
+  }
+  document.querySelector("#errorDiv").innerHTML = "";
+  let taskId = Date.now();
+  let timeStamp = new Date(taskId).toLocaleDateString();
+  if (todos == null) {
+    localStorage.setItem(
+      "todos",
+      JSON.stringify([
+        { task: todoValue, taskId: taskId, dateAdded: timeStamp },
+      ]),
+    );
+  } else {
+    todos.push({ task: todoValue, taskId: taskId, dateAdded: timeStamp });
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }
 
-    loadTodoData();
-    document.querySelector(".input_area").value = "";
+  loadTodoData();
+  document.querySelector(".input_area").value = "";
 });
 
 let checkTask = (taskId) => {
-    // why not accept custom ID like taskID333-445 ...........===========================>>>>>>>>>>>>>>>>>
-    let checkBtn = document.getElementById(taskId);
-    checkBtn.previousElementSibling.classList.toggle("line-through");
+  // why not accept custom ID like taskID333-445 ...........===========================>>>>>>>>>>>>>>>>>
+  let checkBtn = document.getElementById(taskId);
+  checkBtn.previousElementSibling.classList.toggle("line-through");
 };
 
 let taskDelete = (taskId) => {
-    let todos = JSON.parse(localStorage.getItem("todos"));
-    todos.forEach((todo, index) => {
-        if(todo.taskId == taskId) {
-            todos.splice(index, 1)
-        }
-    })
-    localStorage.setItem("todos", JSON.stringify(todos));
-    loadTodoData();
-}
+  let todos = JSON.parse(localStorage.getItem("todos"));
+  todos.forEach((todo, index) => {
+    if (todo.taskId == taskId) {
+      todos.splice(index, 1);
+    }
+  });
+  localStorage.setItem("todos", JSON.stringify(todos));
+  loadTodoData();
+};
+
+
+
+
 
 function loadTodoData() {
-    let todos = JSON.parse(localStorage.getItem("todos"));
-    if (todos == null) {
-        todoList.innerHTML = "";
-    } else {
-        todoList.innerHTML = "";
-        todos.forEach((todo) => {
-            let taskDiv = document.createElement("div");
-            taskDiv.innerHTML = `
-                <ul class="todo flex justify-between items-start p-2.5 rounded-md bg-black border-2 border-blue-300">
+  let todos = JSON.parse(localStorage.getItem("todos"));
+  if (todos == null) {
+    todoList.innerHTML = "";
+  } else {
+    todoList.innerHTML = "";
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "GET",
+    })
+      .then((res) => res.json())
+      .then((todos) => {
+        console.log(todos);
+        todos.forEach((post) => {
+          let taskDiv = document.createElement("div");
+          fetch(`https://jsonplaceholder.typicode.com/users/${post.userId}`, {
+            method: "GET",
+          })
+            .then((res) => {
+              if(!res.ok) {
+                throw new Error("User not found!")
+              }
+              return res.json()
+            })
+            .then((users) => {
+              taskDiv.innerHTML = `
+                <ul class="post flex justify-between items-start p-2.5 rounded-md bg-black border-2 border-blue-300">
                     <div class="flex flex-col items-start gap-5 max-w-full overflow-hidden">
-                    <li class="wrap-break-word whitespace-normal">${todo.task}</li>
-                    <input type="checkbox" id="${todo.taskId}" onclick="checkTask('${todo.taskId}')">
+                    <li class="wrap-break-word whitespace-normal">${post.title}</li>
+                    <input type="checkbox" id="${post.id}" onclick="checkTask('${post.id}')">
                     </div>
                     <div class="flex items-center gap-5">
-                    <p>${todo.dateAdded}</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="2 2 20 20" onclick="taskDelete('${todo.taskId}')" class="transition active:scale-90">
+                    <p>${users.username}</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="2 2 20 20" onclick="taskDelete('${post.id}')" class="transition active:scale-90">
                         <path
                         d="M17 6V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H2v2h2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8h2V6zM9 4h6v2H9zM6 20V8h12v12z">
                         </path>
@@ -75,9 +95,13 @@ function loadTodoData() {
                     </svg>
                     </div>
                 </ul>`;
-            todoList.appendChild(taskDiv);
+              todoList.appendChild(taskDiv);
+            })
+            .catch((error) => {
+              console.log(`Error in request ${error}`)
+            });
         });
-    }
+      });
+  }
 }
 loadTodoData();
-
