@@ -58,7 +58,7 @@ let sendEmail = new Promise((resolve, reject) => {
 })
 console.log(sendEmail)
 
-// promise methods. By default, results of promise are wrapped and we methods to unwrap them.
+// promise methods. By default, results of promise are wrapped and we use these methods to unwrap them.
 // then() = When it resolves
 // catch() = When it rejected.
 

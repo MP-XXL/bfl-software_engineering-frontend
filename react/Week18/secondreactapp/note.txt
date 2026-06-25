@@ -1,0 +1,10 @@
+interactivity concepts
+use state
+use effects
+reusable components - using them
+
+use context
+props
+router
+use reducer
+cutom hooks (state management - using react query/redox/toolkit)

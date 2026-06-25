@@ -32,7 +32,7 @@ console.log(generic([4, 5, 8, 70]))
 // Quote generate
 
 let outPutQuote: HTMLElement | null  = document.getElementById("quoteOutput");
-let generateBtn: HTMLElement | null = document.getElementById("generateBtn")
+let generateBtn: HTMLElement | null = document.getElementById("generateBtn");
 
 generateBtn!.addEventListener("click", () => {
     generateBtn!.setAttribute("disabled", "true")

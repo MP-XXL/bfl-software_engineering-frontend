@@ -82,3 +82,6 @@ createTodo()
 let names = "solex";
 console.log(names.substr(-1));
 
+
+
+
